@@ -1,0 +1,15 @@
+{
+  "name": "tor-proxy",
+  "version": "1.0.0",
+  "description": "The proxy into our HTTP tor network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brent Berghmans, Bert Proesmans",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy": "^1.16.2",
+    "yargs": "^10.0.3"
+  }
+}

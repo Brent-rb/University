@@ -1,0 +1,7 @@
+.UsernameChanger-root > * > * {
+	display: flex;
+}
+
+.UsernameChanger-input {
+	margin-top: -8px;
+}

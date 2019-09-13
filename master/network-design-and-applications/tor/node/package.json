@@ -1,0 +1,16 @@
+{
+  "name": "tor-node",
+  "version": "1.0.0",
+  "description": "A node of our HTTP tor network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brent Berghmans, Bert Proesmans",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-rsa": "^0.4.2",
+    "superagent": "^3.8.0"
+  }
+}

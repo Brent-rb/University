@@ -1,0 +1,56 @@
+version: '3.5'
+
+services:
+  logitrack:
+    build: 'services/app'
+    depends_on:
+      - 'db'
+      - 'dbmgr'
+    env_file:
+      - 'env/app.env'
+      - 'env/db.env'
+      - 'env/dbmgr.env'
+      - 'env/mqtt.env'
+      - 'env/postgres.env'
+    networks:
+      default:
+      internal:
+    restart: 'always'
+    volumes:
+      - './services/app/ui/build:/home/node/app/ui/build:ro'
+      - './services/app/src:/home/node/app/src:ro'
+  db:
+    build: 'services/db'
+    env_file:
+      - 'env/pgdata.env'
+      - 'env/postgres.env'
+    networks:
+      internal:
+    restart: 'always'
+    volumes:
+      - './services/db/pgdata:/var/lib/postgresql/data/pgdata'
+  dbmgr:
+    build: 'services/dbmgr'
+    depends_on:
+      - 'db'
+    networks:
+      default:
+      internal:
+    restart: 'always'
+  vernemq:
+    build: 'services/vernemq'
+    depends_on:
+      - 'db'
+      - 'logitrack'
+    networks:
+      default:
+      internal:
+    ports:
+      - "1883:1883/tcp"
+      - "8883:8883/tcp"
+    restart: 'always'
+
+networks:
+    default:
+    internal:
+      internal: true

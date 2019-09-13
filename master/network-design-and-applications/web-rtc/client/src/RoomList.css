@@ -1,0 +1,25 @@
+
+.RoomList-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.RoomList-paper {
+	width: 960px;
+	margin-top: 1rem;
+}
+
+.RoomList-button-container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+}
+
+.RoomList-button {
+	margin-left: 1rem;
+}
+
+.RoomList-button:first-child {
+	margin-left: 0rem;
+}

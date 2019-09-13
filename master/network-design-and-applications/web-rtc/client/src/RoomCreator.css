@@ -1,0 +1,50 @@
+
+.RoomCreator-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.RoomCreator-paper {
+	width: 960px;
+	margin-top: 1rem;
+}
+
+.RoomCreator-textfield-container {
+	display: flex;
+	align-items: center;
+}
+
+.RoomCreator-form-container {
+	padding: 1rem;
+	padding-bottom: 0rem;
+}
+
+.RoomCreator-textfield-container > *:last-child {
+	flex-grow: 1;
+	margin-left: 1rem;
+}
+
+.RoomCreator-textfield-container > p {
+	margin-left: 1rem;
+}
+
+.RoomCreator-button-container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.RoomCreator-button-container > span {
+	margin-left: 1rem;
+}
+
+.RoomCreator-button {
+	margin-left: 1rem;
+}
+
+.RoomCreator-button:first-child {
+	margin-left: 0rem;
+}

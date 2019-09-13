@@ -1,0 +1,31 @@
+.Room-pictionary-canvas-container {
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	margin-right: 0rem;
+	margin-bottom: 1rem;
+	align-self: stretch;
+	width: 40%;
+}
+
+.Room-pictionary-canvas-container canvas {
+	background-color: #f0f8ff;
+}
+
+.Room-pictionary-canvas-wrapper {
+	height: 100%;
+	width: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+#paper {
+	position: relative;
+}
+
+.Room-pictionary-canvas-buttons {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}

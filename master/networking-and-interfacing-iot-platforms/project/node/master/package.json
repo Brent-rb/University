@@ -1,0 +1,36 @@
+{
+  "name": "node-master",
+  "version": "1.0.0",
+  "description": "The main program running on our nodes.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node build/index.js -d OBDII",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mqtt": "^2.5.0",
+    "@types/node": "^11.13.4",
+    "@types/pg": "^7.4.14",
+    "@types/serialport": "^7.0.2",
+    "@types/ws": "^6.0.1",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {
+    "@ionic-native/bluetooth-serial": "^5.5.0",
+    "@ionic-native/core": "^5.5.1",
+    "bonjour": "^3.5.0",
+    "commander": "^2.20.0",
+    "mqtt": "^2.18.8",
+    "pg": "^7.11.0",
+    "rxjs": "^6.5.1",
+    "serialport": "^7.1.4",
+    "strip-ansi": "^5.2.0",
+    "uuid": "^3.3.2",
+    "ws": "^6.2.1"
+  }
+}
