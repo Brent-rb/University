@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/*Front Page Posts*/
+.big_post {
+	margin-top: 10px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #A5A5A5;
+	overflow: none;
+}
+
+.big_post img {
+	display: inline-block;
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	max-height: 45rem;
+}
+
+.big_post h3 {
+	width: 100%;
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	font-size: 2.6rem;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.big_post h4 {
+	width: 100%;
+	background-color: #858585;
+	color: white;
+	text-align: center;
+	font-size: 2.6rem;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.big_post p {
+	background-color: #e5e5e5;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 1.8rem;
+	height: auto;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+.mid_post h3 {
+	width: 100%;
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.mid_post h4 {
+	width: 100%;
+	background-color: #858585;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.mid_post {
+	overflow: none;
+	min-width: 300px;
+	background-color: #A5A5A5;
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+.mid_post img {
+	display: inline-block;
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	max-height: 30rem;
+}
+
+.mid_post p {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 1.8rem;
+	height: auto;
+	background-color: #e5e5e5;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+#calendar {
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+
+#calendar th {
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+#calendar tr td:first-child {
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+}
+
+.#calendar tr:nth-child(even) .day {
+	width: 100%;
+	background-color: #858585;
+	color: white;
+	text-align: center;
+	padding: 0px;
+	font-size: 2.2rem;
+	box-sizing: border-box;	
+}
+
+.#calendar tr:nth-child(odd) .day {
+	width: 100%;
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	padding: 0px;
+	font-size: 2.2rem;
+	box-sizing: border-box;	
+}
+
+
+
+#calendar a, #calendar p {
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 0px;
+	font-size: 2.2rem;
+	box-sizing: border-box;	
+}
+
+.moreLess {
+	font-size: 1.6rem;
+	background-color: black;
+	color: white;
+}
+
+
+/*End Front Page Posts*/

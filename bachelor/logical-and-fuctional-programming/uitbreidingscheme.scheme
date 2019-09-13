@@ -1,0 +1,67 @@
+(define ortc
+	(lambda (m)
+		(cond
+			((null? m) '())
+			(else (cons (car (car m)) (ortc (cdr m))))
+		)
+	)
+)
+(define srtc
+	(lambda (m)
+		(cond
+			((null? m) '())
+			(else (cons (cdr (car m)) (srtc (cdr m))))
+		)
+	)
+)
+
+(define rtc
+	(lambda (m)
+		(cond
+			((null? (car m)) '())
+			(else
+				(cons (ortc m) (rtc (srtc m))
+			))
+		)
+	)
+)
+
+(define mul_one_ele
+	(lambda (m1 m2)
+		(cond
+			((null? m2) 0)
+			(else
+				(+ (* (car m1) (car m2)) (mul_one_ele (cdr m1) (cdr m2)))
+			)
+		)
+	)
+)
+
+(define mul_one_row
+	(lambda (m1 m2)
+		(cond
+			((null? m1) '())
+			((null? m2) '())
+			(else
+				(cons (mul_one_ele m1 (car m2)) (mul_one_row m1 (cdr m2)))
+			)
+		)
+	)
+)
+
+(define mul_inner
+	(lambda (m1 m2)
+		(cond
+			((null? m1) '())
+			(else
+				(cons (mul_one_row (car m1) m2) (mul_inner (cdr m1) m2))
+			)
+		)
+	)
+)
+
+(define multiply
+  (lambda (m1 m2)
+    (mul_inner m1 (rtc m2))
+  )
+)

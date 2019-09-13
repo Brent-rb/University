@@ -1,0 +1,3 @@
+opgave14_6.txt
+
+Deze gaat altijd een functie oproepen die naar het volgende getal kijkt zolang het volgende getal nog in de tabel ligt. Zo niet gaat hij beginnen met het laaste getal af te drukken omdat de functie verder loopt en doet dit voor alle openstaande functies.

@@ -1,0 +1,2 @@
+Main-Class: Mijnenveger
+Class-Path: tio.jar EpicLibrary.jar

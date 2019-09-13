@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#submit {
+			display: none;
+		}
+	</style>
+	<script type="text/JavaScript" src="/5.js" ></script>
+	<title>5</title>
+</head>
+<body>
+<form action="validate.php" method="post">
+	<p>Voornaam</p>
+	<input type="text" id="voornaam" name="voornaam" onkeypress="checkVoornaam()" />
+	<p>Achternaam</p>
+	<input type="text" id="achternaam" name="achternaam" onkeypress="checkAchternaam()" />
+	<p>Password</p>
+	<input type="password" id="password" name="pw" onkeypress="checkPassword()" />
+	<p>Controle</p>
+	<input type="password" id="pcontrol" name="pc" onkeypress="checkControl()" />
+	<p>Email</p>
+	<input type="email" id="email" name="email" onkeypress="checkEmail()" /><br />
+	<input type="submit" id="submit" />
+	<p id="vorde"></p>
+	<p id="aorde"></p>
+	<p id="porde"></p>
+	<p id="corde"></p>
+	<p id="eorde"></p>
+	<!-- url homepagina? -->
+
+</form>
+</body>
+</html>

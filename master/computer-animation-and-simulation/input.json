@@ -1,0 +1,66 @@
+{
+    "light": {
+        "position": {
+            "x": 0.0,
+            "y": 50.0,
+            "z": 100.0 
+        },
+        "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0 
+        }
+    },
+    "channels": [{
+        "type": "background",
+        "distance": 1000.0,
+        "sky": "../Objects/sky.jpg",
+        "ground": "../Objects/ground.jpg",
+        "forward": "../Objects/sky.jpg",
+        "backward": "../Objects/sky.jpg",
+        "left": "../Objects/sky.jpg",
+        "right": "../Objects/sky.jpg"
+    }, {
+        "type": "camera",
+        "locationPath": {
+            "type": "interpolated",
+            "controller": "easeineaseout",
+            "mode": "speed",
+            "timestamps": [0, 10, 20],
+            "looping": true,
+            "points": [{
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }, {
+                    "x": 0,
+                    "y": 0,
+                    "z": 100
+                }, {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+            }]
+        },
+        "rotationPath": {
+            "type": "simple",
+            "controller": "easeineaseout",
+            "mode": "speed",
+            "timestamps": [0, 10, 20],
+            "looping": true,
+            "points": [{
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }, {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }, {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+            }]
+        }   
+    }]
+}

@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Mon, 24 Sep 2018 16:16:13 GMT
+Server: Apache/2.4.10 (Debian)
+X-Powered-By: PHP/5.6.30-0+deb8u1
+Set-Cookie: DokuWiki=ktcgdhj952m22738l0a3139ti1; path=/public/; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: DWf6ffece904d2b49b04d5cd32ff31e895=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/public/; httponly
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+

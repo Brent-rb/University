@@ -1,0 +1,177 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[official]{eurosym}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Databases: BCNF}
+
+\author{Brent Berghmans 1334252}
+
+\date{Academiejaar 2013-2014}
+
+\begin{document}
+\maketitle
+
+\section{Opdracht 1}
+Voor deze opdracht moeten we \emph{de minimale basis van alle realistische niet-triviale functional dependencies voor het bovenstaande schema} geven. Met behulp van de opgegeven uitleg ben ik aan deze dependencies gekomen:
+
+\subsection{Functional Dependencies}
+\begin{enumerate}
+  \item product $\rightarrow$ prijs \begin{enumerate}
+  	\item Dit is een Minimal Base.
+  	\end{enumerate}
+  \item id, product $\rightarrow$ aantal \begin{enumerate}
+  	\item Dit is een Minimal Base.
+  	\end{enumerate}
+  \item id $\rightarrow$ gebruikerId, datum, naam, plaats \begin{enumerate}
+  	\item id $\rightarrow$ gebruikerId
+  	\item id $\rightarrow$ datum
+  	\item id $\rightarrow$ naam
+  	\item id $\rightarrow$ plaats
+  	\end{enumerate}
+  \item id, nodigUitId $\rightarrow$ bevestiging, partner \begin{enumerate}
+  	\item id, nodigUitId $\rightarrow$ bevestiging
+  	\item id, nodigUitId $\rightarrow$ partner
+  	\end{enumerate}
+\end{enumerate}
+
+\subsection{Uitleg}
+\subsubsection{Functional Dependency 1}
+Deze FD\footnote{Functional Dependency} was vrij makkelijk uit de opgave te halen: \\\emph{"Ieder product heeft 1 prijs (onafhankelijk van het evenement)."}\\\\
+Wat dus wilt zeggen dat elk uniek product zijn eigen prijs heeft ongeacht het evenement, in andere woorden: Als we het product kennen dan kennen we de prijs. Dit komt overeen met de FD:
+\[\text{product } \rightarrow \text{ prijs}\]
+
+\subsubsection{Functional Dependency 2}
+Uit de zin \emph{"Ieder product heeft 1 prijs en wordt een vast aantal keren aangeschaft per evenement."}
+kunnen we afleiden dat voor elk product van een evenement er een uniek aantal stuks worden aangeschaft. Wat we kunnen vertalen naar: Als we het evenement en product kennen dan kennen we ook het aantal stuks. Wat overeenkomt met de FD:
+\[\text{id, product } \rightarrow \text{ aantal}\]
+\subsubsection{Functional Dependency 3}
+Volgens de zin \emph{"Elk evenement wordt georganiseerd door 1 gebruiker en vind plaats op 1 datum en 1 adres."} kunnen we concluderen dat per evenement id we een unieke gebruikerId, datum en plaats hebben. Hieruit kunnen we de volgende FD opstellen:
+\[\text{id } \rightarrow \text{ gebruikerId, datum, naam, plaats}\]
+
+ \subsubsection{Functional Dependency 4}
+ Deze staat niet letterlijk vermeld in de opgave maar als we een realistisch scenario bekijken kunnen we deze FD opstellen. Als we het evenement kennen en we kennen de uitgenodigde persoon dan weten we ook of die persoon als bevestigd heeft of niet en of hij zijn partner meebrengt. Aangezien een een persoon voor meerdere evenementen uitgenodigd kan zijn moeten we wel het evenement erbij specificeren, hierdoor is deze FD dus een minimal base. Daaruit volgt:
+ \[\text{id, nodigUitId } \rightarrow \text{ bevestiging, partner}\]
+
+\subsubsection{Mogelijke Functional Dependency 5}
+De naam van het evenement zou eventueel uniek kunnen zijn, wat meteen al het id, gebruikerId, datum en plaats zou impliceren maar aangezien dit niet expliciet staat vermeld in de opgave gaan we er van uit dat in een realistische situatie er meerdere evenementen kunnen zijn met dezelfde naam.
+
+\section{Opdracht 2}
+Voor deze opdracht moeten we een key geven voor deze relatie.
+\subsection{De Key}
+\[\{id, nodigUitId, product\}\]
+\newpage
+\subsection{Uitleg}
+Deze key kunnen we opstellen aan de hand van de voorgaande functional dependencies.
+Als we de closure van \{id, nodigUitId, product\} nemen komen we de volledige relatie terug uit:\\\\
+We beginnen met \{id, nodigUitId, product\}\\\\
+Door FD id $\rightarrow$ gebruikerId, datum, naam, plaats weten we dat we \{gebruikerId, datum, naam, plaats\} mogen toevoegen aan de closure:\\\\
+\{id, nodigUitId, product, gebruikerId, datum, naam, plaats\}\\\\
+Door FD product $\rightarrow$ prijs mogen we hiernaast ook nog \{prijs\} toevoegen aan de closure:\\\\
+\{id, nodigUitId, product, gebruikerId, datum, naam, plaats, prijs\}\\\\
+Door FD id, product $\rightarrow$ aantal mogen we ook \{aantal\} toevoegen aan de closure:\\\\
+\{id, nodigUitId, product, gebruikerId, datum, naam, plaats, prijs, aantal\}\\\\
+En tot slot mogen we door FD id, nodigUitId $\rightarrow$ bevestiging, partner \{bevestiging, partner\} ook toevoegen aan de closure:\\\\
+\{id, nodigUitId, product, gebruikerId, datum, naam, plaats, prijs, aantal, bevestiging, partner\}\\\\
+Wat gelijk is aan de opgegeven relatie, dus kunnen we concluderen dat \{id, nodigUitId, product\} een geldige key is.
+
+\newpage
+\section{Opdracht 3}
+Voor deze opdracht gaan we er van uit dat als de gegeven functional dependencies geen BCNF violations zijn, dan kunnen we hieruit geen functional dependencies afleiden die wel BCNF violations zijn.\\\\
+Als eerste stap moeten we van EigenEvenement een BCNF relatie maken. \\
+We beginnen met de FD1\footnote{$\text{product }\rightarrow\text{ prijs}$}:\\\\
+Dit is een violation en levert $R_{1}(product, prijs)$ en\\ $R_{2}(product, id, gebruikerId, datum, naam, plaats, nodigUitId, aantal, bevestiging, partner)$ op.\\\\
+$R_{1}$ is BCNF geldig omdat deze relatie voldoet aan alle FDs die hiervoor gelden (namelijk FD1). $R_{2}$ is geen geldige BCNF wegens violation FD2\footnote{$\text{id }\rightarrow \text{ gebruikerId, datum, naam, plaats}$}. Dit ontbinden we in $R_{21}(id, gebruikerId, datum, naam, plaats)$ en \\$R_{22}(id, product, nodigUitId, aantal, bevestiging, partner)$.\\\\
+$R_{21}$ is BCNF geldig omdat deze relatie voldoet aan alle FDs die hiervoor gelden (namelijk FD2). $R_{22}$ is niet BCNF geldig wegens violation FD3\footnote{$\text{id, product }\rightarrow \text{ aantal}$}. Dit ontbinden we dan in $R_{221}(id, product, aantal)$ en $R_{222}(id, product, nodigUitId, bevestiging, partner)$.\\\\
+$R_{221}$ is BCNF geldig omdat deze relatie voldoet aan alle FDs die hiervoor gelden (namelijk FD3). $R_{222}$ is niet BCNF geldig wegens violation FD4\footnote{$\text{id, nodigUitId }\rightarrow\text{  bevestiging, partner}$}. Met als resultaat dat we deze relatie ontbinden in: $R_{2221}(id, nodigUitId, bevestiging, partner)$ en $R_{2222}(id, nodigUitId, product)$.\\\\
+$R_{2221}$ is BCNF geldig omdat deze relatie voldoet aan alle FDs die hiervoor gelden (namelijk FD4). $R_{2222}$ is tevens ook BCNF geldig omdat deze relatie voldoet aan alle FDs die hiervoor gelden (namelijk geen enkele).\\\\
+Als resultaat hebben we dus 5 relaties:
+\begin{center}
+\item{$ProductPrijzen(product, prijs)$}
+\item{$EvenementInfo(id, gebruikerId, datum, naam, plaats)$}
+\item{$ProductAantal(id, product, aantal)$}
+\item{$Uitgenodigden(id, nodigUitId, bevestiging, partner)$}
+\item{$Aankopen(id, nodigUitId, product)$}
+\end{center}
+\newpage
+\subsection{Deel opdracht A}
+De enigste key voor de relatie ProductPrijzen is \textbf{\{product\}} wegens FD1.\\
+Voor de relatie EvenementInfo is \textbf{\{id\}} de enigste key wegens FD2.\\
+In de relatie ProductAantal is \textbf{\{id, product\}} de enigste key wegens FD3.\\
+De enigste key in de relatie Uitgenodigden is \textbf{\{id, nodigUitId\}} wegens FD4.\\
+Voor de laatste relatie Aankopen is \textbf{\{id, nodigUitId, product\}} de enigste key omdat we voor deze relatie geen enkele FD beschikbaar hebben. We hebben dus alle attributen nodig om te weten over welk tupel het gaat.
+\subsection{Deel opdracht B}
+De niet triviale functional dependencies:\\\\Relatie ProductPrijzen \[product\rightarrow prijs\]
+Relatie EvenementInfo\[id\rightarrow gebruikerId, datum, naam, plaats\]
+Relatie ProductAantal\[id, product\rightarrow aantal\]
+Relatie Uitgenodigden\[id, nodigUitId\rightarrow bevestiging, partner\]
+Relatie Aankopen heeft geen niet triviale functional dependencies.
+\subsection{Deel opdracht C}
+Zie einde van 3.
+
+\newpage
+\section{Opdracht 4}
+ProductPrijzen:\\
+\begin{tabular}{| l | l | }
+\hline
+  product & prijs\\
+\hline
+  chips & \euro{2} \\
+  cola & \euro{4} \\
+\hline
+\end{tabular}\\\\
+EvenementInfo:\\
+\begin{tabular}{| l | l | l | l | l |}
+\hline
+id & gebruikerId & datum & naam & plaats\\
+\hline
+1 & 1 & 2/03/2014 & feest & Hasselt\\
+2 & 1 & 8/05/2014 & party & Diepenbeek\\
+\hline
+\end{tabular}\\\\
+ProductAantal:\\
+\begin{tabular}{| l | l | l |}
+\hline
+id & product & aantal\\
+\hline
+1 & chips & 4\\
+1 & cola & 8\\
+2 & chips & 2\\
+2 & cola & 4\\
+\hline
+\end{tabular}\\\\
+Uitgenodigden:\\
+\begin{tabular}{| l | l | l | l |}
+\hline
+id & nodigUitId & bevestiging & partner\\
+\hline
+1 & 2 & ja & ja\\
+1 & 3 & nee & nee\\
+2 & 2 & nee & nee\\
+\hline
+\end{tabular}\\\\
+Aankopen:\\
+\begin{tabular}{| l | l | l |}
+\hline
+id & nodigUitId & product\\
+\hline
+1 & 2 & chips\\
+1 & 2 & cola\\
+1 & 3 & chips\\
+1 & 3 & cola\\
+2 & 2 & chips\\
+2 & 2 & cola\\
+\hline
+\end{tabular}
+
+\newpage
+\section{Opdracht 5}
+De kwaliteit van de relaties is vrij goed buiten de relatie Aankopen, deze is overbodig. Hoe ik de voorbeeld informatie interpreteerde was dat er per uitgenodigde een aantal producten werden bij besteld. Bv: Evenement 1 had als producten cola en chips, en per uitgenodigde werd er herhaald hoeveel aantal er van dit product moest aangeschaft worden wat altijd hetzelfde aantal was. Deze informatie zou men dus perfect uit een JOIN tussen ProductAantal en Uitgenodigde kunnen halen, wat de relatie Aankopen nutteloos zou maken.\\\\
+Een andere interpretatie is dat er niet voor alle uitgenodigde dezelfde producten aangekocht moeten worden. Moest deze interpretatie de juiste zijn dan zou de relatie nog steeds overbodig zijn aangezien we dit probleem makkelijk kunnen oplossen door in de relatie ProductAantal het aantal van bepaald product voor een evenement te incrementeren.\\\\
+
+
+\end{document}f

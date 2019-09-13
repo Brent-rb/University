@@ -1,0 +1,250 @@
+(define f-to-c
+	(lambda (f)
+		(minus (/ (times (plus f 40) 5) 9) 40)
+
+	)
+)
+
+(define c-to-f
+	(lambda (c)
+		(minus (/ (times (plus c 40) 9) 5) 40)
+	)
+)
+
+(define div3?
+	(lambda (n)
+		(cond
+			((eq? (times (div n 3) 3) n) #t)
+			(else #f)
+		)
+	)
+)
+
+(define machten 
+	(lambda (m n)
+		(cond
+			((eq? n 0) '(1))
+			(else (cons (* m (car (machten m (sub1 n)))) (machten m (sub1 n))))
+		)
+	)
+)
+
+(define fiblist
+	(lambda (k)
+		((eq? k 0) '(1))
+		((eq? k 1) '(1 1))
+		(else (cons (plus (car (fiblist (sub1 k))) (car (fiblist (minus k 2)))) (fiblist (sub1 k))))
+	)
+)
+
+
+(define div
+	(lambda (n m)
+		(cond
+			((< n m) 0)
+			(else (add1 (div (minus n m) m)))
+		)
+	)
+)
+
+(define times
+	(lambda (n m)
+		(cond
+			((zero? m) 0)
+			(else (plus n (times n (sub1 m))))
+		)
+	)
+)
+
+(define abs 
+	(lambda (n)
+		(cond
+			((n < 0) (times n *-1))
+			(else n)
+		)
+	)
+)
+
+(define sqrt
+	(lambda (n tolerance)
+		(newton (n tolerance n))
+	)
+)
+
+(define newton
+	(lambda (n tolerance x)
+		(let ((guess (div n 2))))
+		(cond 
+			((<= (abs (minus x (times guess guess))) tolerance) guess)
+			(else (newton (plus guess (div x guess)) tolerance x))
+		)
+	)
+)
+
+(define convert
+	(lambda (lon)
+		(let ((len (length lon)))
+			(cond
+				((eq? len 0) 0)
+				(else (plus (times (car lon) (expt 10 (sub1 len)) (convert (cdr lon))))
+			)
+		)
+	)
+)
+
+(define mergeSort
+	(lambda (lon)
+		(let ((left (car (split lon))))
+			(let ((right (car (cdr (split lon)))))
+				(cond 
+					((eq? (length left) 0) right)
+					((eq? (length right) 0) left)
+					(else (merge (mergeSort left) (mergeSort right)))
+				)
+			)
+		)
+	)
+)
+
+(define merge
+	(lambda (left right)
+		(cond
+			((null? left) right)
+			((null? right) left)
+			(else (cond
+					((> (car left) (car right)) (cons (car left) (merge (cdr left) right)))
+					(else (cons (car right) (merge left (cdr right))))
+				)
+			)
+		)
+	)
+)
+
+(define split
+	(lambda (ln)
+		(splitInner ln '())
+	)
+)
+
+(define splitInner
+	(lambda (left right)
+		(cond
+			((<= (length left) (length right)) (cons left (cons right '())))
+			(else (splitInner (cdr left) (cons (car left) right)))
+		)
+	)
+)
+
+(define minus
+	(lambda (n m)
+		(cond 
+			((zero? m) n)
+			(else (sub1 (minus n (sub1 m)))
+		)
+	)
+)
+
+(define eliminate 
+	(lambda (limit l)
+		(cond
+			((null? l) '())
+			((<= (car l) limit) (cons (car l) (eliminate limit (cdr l))))
+			(else (eliminate limit (cdr l)))
+		)
+	)
+)
+
+(define average
+	(lambda (lon)
+		(div (plusList lon) (length lon))
+	)
+)
+
+(define plusList
+	(lambda (lon)
+		(cond
+			((null? lon) 0)
+			(else (plus (car lon) (plusList (cdr lon))))
+		)
+	)
+)
+
+;Nog niet compleet
+(define variance
+	(lambda (lon)
+		(varianceInner (average lon) 1 lon)
+	)
+)
+
+(define varianceInner
+	(lambda (average cnt lon)
+		(cond
+			((null? lon) 0)
+			((eq? cnt 1) (/ (plus (times (minus average (car lon)) (minus average (car lon))) varianceInner(average (add1 cnt) (cdr lon))) (length lon)))
+			(else (plus (times (minus average (car lon)) (minus average (car lon))) varianceInner(average (add1 cnt) (cdr lon))) (length lon))
+		)
+	)
+)
+
+;#######################
+;#    HOOFDSTUK 5      #
+;#######################
+
+(define count*
+	(lambda (l)
+		(cond
+			((null? l) 0)
+			((atom? (car l)) (add1 (count* (cdr l))))
+			(else (plus (count* (car l)) (count* (cdr l))))
+		)
+	)
+)
+
+(define insertLR*
+	(lambda (left patern right l)
+		(cond
+			((null? l) '())
+			((atom? (car l))
+				(cond
+					((eq? (car l) patern) (cons left (cons patern (cons right (insertLR* left patern right (cdr l))))))
+					(else (cons (car l) (insertLR* left patern right (cdr l))))
+				)
+			)
+			(else (cons (insertLR* left patern right (car l)) (insertLR* left patern right (cdr l))))
+		)
+	)
+)
+
+(define countIf*
+	(lambda (pattern l)
+		(cond
+			((null? l) 0)
+			((atom? (car l))
+				(cond
+					((eq? pattern (car l)) (add1 (countIf* pattern (cdr l))))
+					(else (countIf* pattern (cdr l)))
+				)
+			)
+			(else (plus (countIf* pattern (car l)) (countIf* pattern (cdr l))))
+		)
+	)
+)
+
+
+;Deze functie gaat het diepste niveau van een lijst bepalen, als het een lijst in een lijst in een lijst is, is het diepste niveau 3
+;De functie gaat op alle niveaus de lijst helemaal afgaan en 1 optellen als hij een niveau dieper kan gaan, dan gaat hij hetzelfde doen voor de rest van de lijst
+;En als deze een dieper aantal niveaus heeft gaat dit getal teruggegeven worden.
+(define mystery2
+	(lambda (x)
+		(cond 
+				((atom? x) 0)
+				((null? x) 1)
+				(else (max
+					(+ (mystery2 (car x)) 1)
+					(mystery2 (cdr x))
+				)
+			)
+		)
+	)
+)
+

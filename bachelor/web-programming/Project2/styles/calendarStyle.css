@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#content {
+	width: 100%;
+}
+
+#calendar {
+	width: 100%;
+	height: auto;
+}
+
+#calendar th {
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+.day {
+	width: 100%;
+	background-color: #858585;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+}
+
+#calendar tr td:first-child {
+	background-color: #454545;
+	color: white;
+	text-align: center;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+}
+
+#calendar a, #calendar p {
+	width: 100%;
+}

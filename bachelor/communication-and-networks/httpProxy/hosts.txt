@@ -1,0 +1,5 @@
+#ignore
+google.be imgur.com
+#ignore
+google.com 9gag.com
+imgur.com thefaceless.be

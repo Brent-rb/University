@@ -1,0 +1,44 @@
+faculteit(X, F) :- 
+	X = 1,
+	F = 1.
+
+faculteit(X, F) :-
+	X = 0,
+	F = 1.
+
+faculteit(X, F) :-
+	Y is X - 1,
+	faculteit(Y, A),
+	Z is Y - 1,
+	faculteit(Z, B),
+	F is A + B.
+
+macht(X, N, V) :-
+	N = 0,
+	V is 1.
+
+macht(X, N, V) :-
+	N = 1,
+	V is X.
+
+macht(X, N, V) :-
+	N >= 2,
+	Y is X * X,
+	A is N - 2,
+	macht(X, A, Z),
+	V is Y * Z.
+
+priem(X) :-
+	Y is X - 1,
+	not(checkDiv(X, Y)).
+
+checkDiv(X, Y) :-
+	X mod Y = 0.
+
+checkDiv(X, Y) :-
+	Y > 3,
+	Z is Y - 1,
+	checkDiv(X, Z).
+
+
+

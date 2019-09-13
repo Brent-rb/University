@@ -1,0 +1,380 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	margin: 0px;
+	}
+ 
+a:link {
+	color: white;
+	font-size: 1.1em;
+	font-weight:600;
+	font-family: 'Droid Sans', sans-serif;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	font-size:1.1em;
+	font-weight:600;
+	font-family: 'Droid Sans', sans-serif;
+	text-decoration: none;
+}
+
+a:active {
+	color:#000;
+	font-size:1.1em;
+	font-weight:600;
+	font-family: 'Droid Sans', sans-serif;
+	text-decoration: none;
+}
+a img {
+	border: none;
+	}
+html, body {
+	font-family: 'Droid Sans', 'Sans Serif';
+	font-size: 10px;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #EDEDED;
+}
+
+nav {
+	position: relative;
+	z-index: 100;
+
+}
+
+/*Menubar + Banner*/
+
+#menubar {
+	background-color: #858585;
+	text-align: center;
+	color: white;
+	height: auto;
+	width: 100%;
+	list-style: none;
+	overflow: auto;
+}
+
+#menubar > li > a, span {
+	width: 15rem;
+	font-size: 2rem;
+	line-height: 4rem;
+	display: block;
+}
+
+#menubar ul {
+	overflow: auto;
+}
+
+#menubar > li:hover > a {
+	background-color: #9C9C9C;
+}
+
+#menubar > li:hover > span {
+	background-color: #9C9C9C;
+}
+
+#menubar input  {
+	width: 15rem;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+#menubar > li {
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+}
+
+#menubar li {
+	word-wrap: break-word;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#menubar li ul li {
+	width: 15rem;
+	box-sizing: border-box;
+	background-color: #858585;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+}
+
+#menubar li ul li:hover {
+	background-color: #9C9C9C;
+}
+
+#menubar > li > ul {
+	display: none;
+}
+
+#menubar li:hover ul {
+	display: block;
+	position: absolute;
+}
+
+#menubar li:hover ul li {
+	clear: both;
+}
+
+
+#settings {
+	margin-right: 0px!important;
+	width: 15rem;
+	position: absolute;
+	right: 0px;
+}
+
+#settings span {
+	height: 4rem;
+}
+
+#settings img {
+	margin: auto;
+	height: 4rem;
+	width: auto;
+}
+
+#banner {
+	margin-bottom: -2px;
+	height: 7rem;
+	width: 100%;
+}
+
+
+
+/*End menubar */
+
+
+/*Content*/
+#content {
+	min-height: calc(100% - 16.1rem);
+	position: relative;
+	z-index: 0;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+
+
+.basic_textbox {
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+	width: 70%;
+	height: auto;
+	background-color: #e5e5e5;
+	outline: 2px solid #c3c3c3;
+	font-size: 1.8rem;
+}
+
+.basic_form {
+	min-width: 13rem;
+	margin-top: 10px;
+	border: 2px solid #c3c3c3;
+	background-color: #e5e5e5;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(50% - 4px);
+}
+
+
+.basic_form h2 {
+	padding-left: 10px;
+	position: relative;
+	font-size: 2.6rem;
+	line-height: 4rem;
+	width: calc(100% - 9px);
+	color: #5c5c5c;
+	box-shadow: 0px 1px 3px black;
+	background-color: rgba(229, 229, 299, 0.8);
+}
+
+.basic_form h4 {
+	padding-left: 10px;
+	padding-top: 3px;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+}
+
+.basic_form input {
+	width: calc(100% - 20px);
+	margin-left: 10px;
+}
+
+.basic_form button {
+	margin-left: 10px;
+}
+
+.basic_form textarea, select {
+	resize: vertical;
+	box-sizing: border-box;
+	margin-left: 10px;
+	width: calc(100% - 20px);
+
+}
+
+
+#imageOverlay {
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	display: none;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#imageOverlay img {
+	vertical-align: middle;
+	border: 2px solid white;
+	max-height: 80%;
+	max-width: 80%;
+}
+.centerHelper {
+	width: 0;
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.clearFloat {
+	clear: both;
+}
+
+/*End content*/
+
+
+/*Footer*/
+footer {
+	display: none;
+	margin-top: 10px;
+	height: 4rem;
+	font-size: 2rem;
+	color: white;
+	background-color: #858585;
+}
+/*End Footer*/
+
+/*Buttons*/
+.editButton {
+	font-size: 0;
+	background-color: yellow;
+    width: 50px;
+    height: 20px;
+    border: none;
+    float: left;
+}
+
+.deleteButton {
+	font-size: 0;
+	background-color: red;
+    width: 50px;
+    height: 20px;
+    border: none;
+}
+
+@media all and (max-width: 900px) {
+
+#content {
+	width: 100%;
+}
+
+#settings {
+	margin-right: 0;
+	position: relative;
+	z-index: 0;
+	right: auto;
+}
+
+}
+
+@media all and (max-width: 400px) {
+#menubar > li > a, span {
+	width: 100%;
+}
+
+
+#menubar li {
+	width: 100%;
+}
+
+#menubar ul {
+	width: 100%;
+}
+
+#menubar li ul {
+	width: 100%;
+}
+
+#menubar li ul li {
+	width: 100%;
+}
+
+#menubar input {
+	width: 100%;
+}
+
+#menubar li:hover ul {
+	display: none;
+}
+
+iframe {
+	display: none;
+}
+
+}

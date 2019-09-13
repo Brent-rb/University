@@ -1,0 +1,25 @@
+Exercise 1.1. In the following dialog, identify
+• the lines sent by the client and those sent by the server,
+• the HTTP method used,
+• the status code with which the server answered,
+• the content-type(s) accepted by the client/provided by the server,
+• the actual data submitted in the request/answered by the server
+
+
+CLIENT:
+    POST /data/shorten HTTP/1.1                                                                 # HTTP Method "POST"
+    Content-Type: application/x-www-form-urlencoded                                             # Data in this request is from a web form 
+    Accept: application/json, text/javascript, */*; q=0.01                                      # Client accepts JSON, Javascript, Everything, client strongly prefers JSON and Javascript
+    Referer: http://bitly.com/                                                                  # Client comes from here
+    Host: bitly.com                                                                             # Host 
+    Content-Length: 141                                                                         # Data length
+    Cookie: [...]                                                                               
+    url=www.ulb.ac.be&basic_style=1&classic_mode=&rapid_shorten_mode=[...]                      # Actual data sent
+
+SERVER:
+    HTTP/1.1 200 OK                                                                             # Status code 200
+    Server: nginx                                                                               # Server is nginx
+    Content-Type: application/json; charset=UTF-8                                               # Data in this request is JSON encoded in UTF-8
+    Content-Length: 176                                                                         # Data length
+    Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+    {"status_code": 200, "data": {"url": "http://bit.ly/8UEV5N", "hash": "8UEV5N", [...]        # Actual data sent

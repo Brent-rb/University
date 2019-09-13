@@ -1,0 +1,48 @@
+Index:
+	Letter 'A' is not in the list.
+	Letter 'B' is not in the list.
+	Letter 'C' is not in the list.
+	Letter 'D' is not in the list.
+	Letter 'E' is not in the list.
+	Letter 'F' is not in the list.
+	Letter 'G' is not in the list.
+	Letter 'H' is in the list at position: 0
+	Letter 'I' is not in the list.
+	Letter 'J' is in the list at position: 1
+	Letter 'K' is not in the list.
+	Letter 'L' is in the list at position: 2
+	Letter 'M' is not in the list.
+	Letter 'N' is in the list at position: 3
+	Letter 'O' is not in the list.
+	Letter 'P' is in the list at position: 4
+	Letter 'Q' is not in the list.
+	Letter 'R' is in the list at position: 5
+	Letter 'S' is not in the list.
+	Letter 'T' is in the list at position: 6
+	Letter 'U' is not in the list.
+	Letter 'V' is in the list at position: 7
+	Letter 'W' is not in the list.
+	Letter 'X' is in the list at position: 8
+	Letter 'Y' is not in the list.
+	Letter 'Z' is in the list at position: 9
+
+List:
+	Album "Yolo" of artist "Hwagger" made in year 2014 contains the following songs:
+		None
+	Album "Yolo" of artist "Jwagger" made in year 2012 contains the following songs:
+		None
+	Album "Yolo" of artist "Lwagger" made in year 2010 contains the following songs:
+		None
+	Album "Yolo" of artist "Nwagger" made in year 2008 contains the following songs:
+		None
+	Album "Yolo" of artist "Pwagger" made in year 2006 contains the following songs:
+		None
+	Album "Yolo" of artist "Rwagger" made in year 2004 contains the following songs:
+		None
+	Album "Yolo" of artist "Twagger" made in year 2002 contains the following songs:
+		None
+	Album "Yolo" of artist "Vwagger" made in year 2000 contains the following songs:
+		None
+	Album "Yolo" of artist "Xwagger" made in year 1998 contains the following songs:
+		None
+	Album "Yolo" of artist "Zwagger" made in year 1996 contains the following songs:		

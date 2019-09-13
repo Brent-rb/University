@@ -1,0 +1,4 @@
+opgave14_5.txt
+
+De functie f gaat altijd het charAt(pos + 1) blijven oproepen totdat pos + 1 gelijk is aan s.length.
+als gevolg gaat deze functie de string ook omdraaien

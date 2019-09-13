@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+<script>
+function sortFun(var1, var2) {
+	if(var1.length < var2.length)
+		return -1;
+	else if(var1.length == var2.length)
+		return 0;
+	else
+		return 1;
+}
+
+var array = ["Brent", "Br", "B", "Bre", "Bren"];
+
+array.sort(sortFun);
+
+for (var i = 0; i < array.length; i++) 
+	document.write(array[i] + "<br />");
+</script>
+</body>
+</html>

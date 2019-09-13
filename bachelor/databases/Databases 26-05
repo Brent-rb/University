@@ -1,0 +1,81 @@
+Databases 26/05
+
+a)
+
+B -> A, C -> B, D -> C, A -> D
+
+
+Key {A}
+Valid
+
+Key {B}
+Valid
+
+Key {C}
+Valid
+
+Key {D}
+Valid
+
+b)
+BC -> D, D -> A, and A -> B
+
+D -> A Violation
+	{DAB} + {DC}
+	{AB} + {AD} + {DC}
+
+A -> B Violation
+	{AB} + {ACD}
+	{AB} + {DA} + {DC}
+
+c)
+A -> B, A -> C
+
+A -> B Violation
+	{ABC} + {AD}
+
+	A, B, C, AB, AC -> Nog checken voor violations 
+
+d)
+AB -> D, BD -> C, CD -> A, AC -> B
+Geen violations
+
+e)
+AB -> C, C -> E, E -> A, E -> D
+C -> E Violation
+{CEAD} + {CB}
+{EA} + {ECD} + {CB} // WRONG
+{EA} + {ED} + {EC} + {CB} // WRONG
+
+f)
+AB -> C, DE -> C, B -> E
+
+{ABCE} + {ABD}
+{BE} + {BAC} + {ABD}
+
+
+{DEC} {DEBA}
+{DEC} + {BE} + {BDA}
+
+{BE} + {ABCD}
+{BE} + {ABC} + {ABD}
+
+
+
+3.3.2)
+
+A | B | C
+a 	b 	c
+d 	f 	c
+
+A | C 		B | C
+a 	c 		b   c
+d 	c  		f   c
+
+
+AC \bowtie BC	
+
+a b c
+a f c
+d b c
+d f c

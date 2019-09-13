@@ -1,0 +1,60 @@
+4 3 7 9 2 3
+i = 0
+	j = 5
+		2 > 3? Nee
+	j = 4 
+		9 > 2? Ja
+			v[3] <-> v[4]
+			v = [4, 3 7, 2, 9, 3]
+	j = 3
+		7 > 2? Ja
+			v[2] <-> v[3]
+			v = [4, 3, 2, 7, 9, 3]
+	j = 2
+		3 > 2? Ja
+			v[1] <-> v[2]
+			v = [4, 2, 3, 7, 9, 3]
+	j = 1 
+		4 ? 2? Ja
+			v[0] <-> v[1]
+			v = [2, 4, 3, 7, 9, 3]
+i = 1
+	j = 5
+		9 > 3? Ja
+			v[4] <-> v[5]
+			v = [2, 4, 3, 7, 3, 9]
+	j = 4
+		7 > 3? Ja
+			v[3] <-> v[4]
+			v = [2, 4, 3, 3, 7, 9]
+	j = 3
+		3 > 3? Nee
+	j = 2
+		4 > 3? Ja
+			v[1] <-> v[2]
+			v = [2, 3, 4, 3, 7, 9]
+i = 2
+	j = 5
+		7 > 9? Nee
+	j = 4
+		3 > 7? Nee
+	j = 3
+		4 > 3? Ja
+			v[2] <-> v[3]
+			v = [2, 3, 3, 4, 7, 9]
+
+i >= 0, i < n
+for i = 0 up to n do 
+	i < j < n
+	v[0 i) gesorteert
+	for j = n - 1 down to i do
+		v[j] kleinste element van v[j n -1]
+		if v[j - 1] > v[j] then
+			v[j - 1] > v[j]
+			v[j - 1], v[j] <- v[j], v[j - 1]
+		end if
+		v[j - 1] kleinste element van v[j - 1 n - 1]
+	end for
+	v[i] >= v[0 i), v[i] <= v[i + 1 n - 1]
+	v[0 i] gesorteert
+end for

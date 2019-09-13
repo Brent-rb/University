@@ -1,0 +1,395 @@
+HTTP/1.1 200 OK
+Date: Mon, 24 Sep 2018 16:16:06 GMT
+Server: Apache/2.4.10 (Debian)
+X-Powered-By: PHP/5.6.30-0+deb8u1
+Set-Cookie: DokuWiki=jc684hpfqhl4851a89bqlhl7h4; path=/public/; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: DWf6ffece904d2b49b04d5cd32ff31e895=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/public/; httponly
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+5464
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+<meta name="verify-v1" content="rcVDrPR08QzOAUVFhVCuanecCkCkqjgflrc3HVKT3cs=" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    INFO-H-511 : Web Services    [Université Libre de Bruxelles - Service CoDE - Laboratoire WIT]
+  </title>
+
+  <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="teaching,infoh511"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/public/lib/exe/opensearch.php" title="Université Libre de Bruxelles - Service CoDE - Laboratoire WIT"/>
+<link rel="start" href="/public/"/>
+<link rel="contents" href="/public/teaching/infoh511?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent changes" href="/public/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="/public/feed.php?mode=list&amp;ns=teaching"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/public/_export/xhtml/teaching/infoh511"/>
+<link rel="canonical" href="http://cs.ulb.ac.be/public/teaching/infoh511"/>
+<link rel="stylesheet" type="text/css" href="/public/lib/exe/css.php?t=ulb&amp;tseed=f1c0594bedaf7ebff183203b04a647e3"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='teaching';var JSINFO = {"id":"teaching:infoh511","namespace":"teaching"};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/public/lib/exe/js.php?tseed=f1c0594bedaf7ebff183203b04a647e3"></script>
+
+  <link rel="shortcut icon" href="/public/lib/tpl/ulb/images/favicon.ico" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+<!--      <div class="pagename">
+        [[<a href="/public/teaching/infoh511?do=backlink" >INFO-H-511 : Web Services</a>]]
+      </div>--->
+      
+        <a href="/public/start"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]"><div class="logo"></div></a>      
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <!--<form class="button btn_recent" method="get" action="/public/teaching/infoh511"><div class="no"><input type="hidden" name="do" value="recent" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>-->
+        <form action="/public/start" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><span class="home"><bdi><a href="/public/start" class="wikilink1" title="start">Service CoDE</a></bdi></span> » <bdi><a href="/public/teaching/start" class="wikilink1" title="teaching:start">Enseignement</a></bdi> » <bdi><span class="curid"><a href="/public/teaching/infoh511" class="wikilink1" title="teaching:infoh511">INFO-H-511 : Web Services</a></span></bdi>    </div>
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div id="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="#general_information">GENERAL INFORMATION</a></div></li>
+<li class="level1"><div class="li"><a href="#project_assignment">PROJECT ASSIGNMENT</a></div></li>
+<li class="level1"><div class="li"><a href="#course_trajectory">COURSE TRAJECTORY</a></div></li>
+<li class="level1"><div class="li"><a href="#course_trajectory1">COURSE TRAJECTORY</a></div></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="info-h-511web_services">INFO-H-511 : Web Services</h1>
+<div class="level1">
+
+</div>
+
+<h2 class="sectionedit2" id="general_information">GENERAL INFORMATION</h2>
+<div class="level2">
+
+<p>
+This course serves as an introduction to web services and its related
+technologies. The main course objectives and developed competences, as well as the examination modalities are summarized in the <a href="/public/_media/teaching/infoh511/plan_de_cours.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:plan_de_cours.pdf (78.8 KB)">course plan (general course information document)</a>.
+</p>
+
+<p>
+<p><div class="noteimportant"> Due to the fact that the course is organized in a seminar and discussion style, your presence to the theory lectures is a <strong>mandatory requirement</strong> for passing the course. 
+</p>
+
+<p>
+Students unable to attend the theory lectures due to conflicting timetables are required to make an alternate assignment. Contact the course responsible for more information.
+ 
+</div></p>
+</p>
+
+</div>
+
+<h3 id="contacts">Contacts</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <strong>Course responsible</strong>: <a href="http://code.ulb.ac.be/code.people.php?id=992" class="urlextern" title="http://code.ulb.ac.be/code.people.php?id=992"  rel="nofollow">Stijn Vansummeren</a> (Bâtiment U, étage 4, local UB4.125, Campus Solbosch)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Assistant</strong>: <a href="http://code.ulb.ac.be/~seppe/" class="urlextern" title="http://code.ulb.ac.be/~seppe/"  rel="nofollow">Stefan Eppe</a> </div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="organisation">Organisation</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> The course is taught during the second semester</div>
+</li>
+<li class="level2"><div class="li"> The course modalities are summarized in the <a href="/public/_media/teaching/infoh511/plan_de_cours.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:plan_de_cours.pdf (78.8 KB)"> course plan (general course information document)</a></div>
+</li>
+<li class="level2"><div class="li"> The course schedule is available <a href="/public/teaching/infoh511/horaire" class="wikilink1" title="teaching:infoh511:horaire">on-line</a> and in <a href="/public/_media/teaching/infoh511/plan_de_cours.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:plan_de_cours.pdf (78.8 KB)">offline pdf format </a></div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit3" id="project_assignment">PROJECT ASSIGNMENT</h2>
+<div class="level2">
+
+<p>
+The project (which contributes 10/20 of the overall course score) consists of conceiving, designing, and implementing a web service back-end (and, where needed, front-end). The project must be completed in groups of 2. <a href="/public/_media/teaching/infoh511/project-assignment-2013-2014-1.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:project-assignment-2013-2014-1.pdf (134.4 KB)">Read the full assignment.</a>
+</p>
+
+<p>
+Important dates:
+</p>
+<ul>
+<li class="level1"><div class="li"> February 26 group submission</div>
+</li>
+<li class="level2"><div class="li"> March 3 project proposal submission</div>
+</li>
+<li class="level2"><div class="li"> March 10 notification of acceptance for project proposals</div>
+</li>
+<li class="level2"><div class="li"> March 31 interim report phase 2 due</div>
+</li>
+<li class="level2"><div class="li"> May 14 project deadline</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit4" id="course_trajectory">COURSE TRAJECTORY</h2>
+<div class="level2">
+
+</div>
+
+<h3 id="lecture_1introduction_and_web_architecture">Lecture 1: Introduction and Web Architecture</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> During lecture 1 (<a href="/public/_media/teaching/infoh511/lecture1.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:lecture1.pdf (2.1 MB)">slides</a>, <a href="/public/_media/teaching/infoh511/lecture1-handouts.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:lecture1-handouts.pdf (1.2 MB)">handouts</a>), we introduce the course, its organization, and its examination modalities. In addition, we present a detailed overview of the architecture of the Web (including the HTTP protocol), and present a historical motivation for service-oriented computing and Web Services. See <a href="http://www.jmarshall.com/easy/http/#whatis" class="urlextern" title="http://www.jmarshall.com/easy/http/#whatis"  rel="nofollow">HTTP made really easy</a> and <a href="https://cs.ulb.ac.be/csbox/data/public/7bfe7d.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/7bfe7d.php"  rel="nofollow">these course notes</a> (password protected) for the details (not that the code examples are only for illustration purposes).</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="lecture_2rest">Lecture 2: REST</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> During lecture 2 (<a href="/public/_media/teaching/infoh511/2-rest.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:2-rest.pdf (898.4 KB)">slides</a>), we introduced the REST-style approach towards building web services. See <a href="https://cs.ulb.ac.be/csbox/data/public/e0f9bf.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/e0f9bf.php"  rel="nofollow">these courses notes</a> (password protected) for details.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_1soap">Seminar 1: SOAP</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar was present by <strong> De Ridder, Jasmien</strong> and <strong>Van Denhouwe, Tania</strong> based on <a href="https://cs.ulb.ac.be/csbox/data/public/c4329c.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/c4329c.php"  rel="nofollow">this seminar assignment</a>. (<a href="/public/_media/teaching/infoh511/ws_soap_jasderid_tvdhouwe.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:ws_soap_jasderid_tvdhouwe.pdf (913.2 KB)">The slides of their presentation are on-line.</a>)</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> All other students are asked to perform <a href="https://cs.ulb.ac.be/csbox/data/public/58bcda.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/58bcda.php"  rel="nofollow">this reading assignment</a> in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Both assignments refer to documents in <a href="https://cs.ulb.ac.be/csbox/data/public/c819e6.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/c819e6.php"  rel="nofollow">these seminar notes</a></div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_2wsdl">Seminar 2: WSDL</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar will be prepared and presented by <strong>Svoboda	Ondrej</strong> and <strong>Kameniar, 	Irina</strong> and <strong>Chaji, Mohamed</strong> based on <a href="https://cs.ulb.ac.be/csbox/data/public/d77a2d.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/d77a2d.php"  rel="nofollow">this seminar assignment</a>. <a href="/public/_media/teaching/infoh511/wsdl_wsseminar2013-2014.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:wsdl_wsseminar2013-2014.pdf (2 MB)">The slides of their presentation are on-line.</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> All other students are asked to perform <a href="https://cs.ulb.ac.be/csbox/data/public/0c8f8c.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/0c8f8c.php"  rel="nofollow">this reading assignment</a> in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_3uddi">Seminar 3: UDDI</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar will be prepared and presented by <strong>Bos, David</strong> and <strong>Bellen,	Ward</strong> based on based on <a href="https://cs.ulb.ac.be/csbox/data/public/7729df.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/7729df.php"  rel="nofollow">this seminar assignment</a>. <a href="/public/_media/teaching/infoh511/uddi-wsseminar13-14.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:uddi-wsseminar13-14.pdf (1.6 MB)">The slides of the presentation are online</a>.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> All other students are asked to perform <a href="https://cs.ulb.ac.be/csbox/data/public/a9001f.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/a9001f.php"  rel="nofollow">this reading assignment</a> in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Both assignments refer to documents in <a href="https://cs.ulb.ac.be/csbox/data/public/769176.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/769176.php"  rel="nofollow">these seminar notes</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_4security_1">Seminar 4: SECURITY 1</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar will be prepared and presented by <strong>Isaac, Komolafe</strong>, and <strong>Mwerkenrande	Victor</strong> based on <a href="https://cs.ulb.ac.be/csbox/data/public/eea4e2.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/eea4e2.php"  rel="nofollow">this seminar assignment</a>.</div>
+</li>
+<li class="level1"><div class="li"> All other students are asked to perform [<a href="https://cs.ulb.ac.be/csbox/data/public/c0e5be.php[" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/c0e5be.php["  rel="nofollow">https://cs.ulb.ac.be/csbox/data/public/c0e5be.php[</a>|this reading assignment]] in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+<li class="level1"><div class="li"> Both assignments refer to documents in <a href="https://cs.ulb.ac.be/csbox/data/public/98d479.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/98d479.php"  rel="nofollow">these seminar notes</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_5security_2">Seminar 5: SECURITY 2</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar will be prepared and presented by <strong>Velasco Aguirre,	Julio Cesar</strong>,  and <strong>Moureau,	François</strong>  based on <a href="https://cs.ulb.ac.be/csbox/data/public/ac0332.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/ac0332.php"  rel="nofollow">this seminar assignment</a>.</div>
+</li>
+<li class="level1"><div class="li"> All other students are asked to perform  <a href="https://cs.ulb.ac.be/csbox/data/public/0afc37.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/0afc37.php"  rel="nofollow">this reading assignment</a> in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+<li class="level1"><div class="li"> Both assignments refer to <a href="https://cs.ulb.ac.be/csbox/data/public/0e6525.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/0e6525.php"  rel="nofollow">this</a> and <a href="https://cs.ulb.ac.be/csbox/data/public/86ffa8.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/86ffa8.php"  rel="nofollow">this</a> document.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_6addressing_notification">Seminar 6: ADDRESSING &amp; NOTIFICATION</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar will be prepared and presented by <strong>Mestereaga, Paul-Catalin</strong>  and <strong>Van Gyseghem, Kevin</strong> and <strong>Abubakr, Mahmoud</strong>  based on <a href="https://cs.ulb.ac.be/csbox/data/public/678a69.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/678a69.php"  rel="nofollow">this seminar assignment</a>.  <a href="/public/_media/teaching/infoh511/presentation-addr-resources-notif.pdf" class="media mediafile mf_pdf" title="teaching:infoh511:presentation-addr-resources-notif.pdf (2.1 MB)">The slides of the presentation are online</a>.</div>
+</li>
+<li class="level1"><div class="li"> All other students are asked to perform  <a href="https://cs.ulb.ac.be/csbox/data/public/fa5daf.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/fa5daf.php"  rel="nofollow">this reading assignment</a> in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+<li class="level1"><div class="li"> Both assignments refer to documents in <a href="https://cs.ulb.ac.be/csbox/data/public/3fbe42.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/3fbe42.php"  rel="nofollow">these seminar notes</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="seminar_7web_service_transactions">Seminar 7: WEB SERVICE TRANSACTIONS</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This seminar will be prepared and presented by <strong>Feron, Gaspar</strong>  and <strong>Bogaert,	Martin</strong> based on <a href="https://cs.ulb.ac.be/csbox/data/public/187890.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/187890.php"  rel="nofollow">this seminar assignment</a>.</div>
+</li>
+<li class="level1"><div class="li"> All other students are asked to perform  <a href="https://cs.ulb.ac.be/csbox/data/public/7cce1f.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/7cce1f.php"  rel="nofollow">this reading assignment</a> in order to prepare for the seminar, and hold appropriate discussions.</div>
+</li>
+<li class="level1"><div class="li"> Both assignments refer to documents in <a href="https://cs.ulb.ac.be/csbox/data/public/96f2c0.php" class="urlextern" title="https://cs.ulb.ac.be/csbox/data/public/96f2c0.php"  rel="nofollow">these seminar notes</a>.</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit5" id="course_trajectory1">COURSE TRAJECTORY</h2>
+<div class="level2">
+
+</div>
+
+<h3 id="lab_1http_programming">Lab 1: HTTP Programming</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> In this lab we will manually query the Web through HTTP requests and programmatically interrogate an RPC-style Web Service (<a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab1-exercises/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab1-exercises/archive/tip.zip"  rel="nofollow">exercises</a>, <a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab1-solutions/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab1-solutions/archive/tip.zip"  rel="nofollow">solutions</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="lab_2developing_rest_services">Lab 2: Developing REST Services</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> In this lab we will see an example of how a modern framework (in our case, we will focus on the Play framework) provides facilities to develop and deploy a REST web service (<a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab2-exercises/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab2-exercises/archive/tip.zip"  rel="nofollow">exercises</a>, <a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab2-solutions/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab2-solutions/archive/tip.zip"  rel="nofollow">solutions</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="lab_3using_developing_soap_services">Lab 3: Using &amp; developing SOAP Services</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> In this lab we will use and implement SAOP services (<a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab3-exercises/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab3-exercises/archive/tip.zip"  rel="nofollow">exercises</a>, <a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab3-solutions/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab3-solutions/archive/tip.zip"  rel="nofollow">solutions</a>).</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="lab_4composite_services">Lab 4: Composite services</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> This lab has been dropped.</div>
+</li>
+</ul>
+
+</div>
+
+<h3 id="lab_5presenting_web_services">Lab 5: Presenting Web Services</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> In this lab we will see how a REST-based web service can be presented to the user via a user interface. To this purpose, we will use JSON for data interchange and AJAX to build a single page application (<a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab5-Exercises/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab5-Exercises/archive/tip.zip"  rel="nofollow">exercises</a>, <a href="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab5-Solutions/archive/tip.zip" class="urlextern" title="http://wit-projects.ulb.ac.be/rhodecode/INFO-H-511/Labs/Lab5-Solutions/archive/tip.zip"  rel="nofollow">solutions</a>). <a href="/public/_media/teaching/infoh511/lab5-exercises-1314.zip" class="media mediafile mf_zip" title="teaching:infoh511:lab5-exercises-1314.zip (13.2 MB)">Temporary exercise zip</a></div>
+</li>
+</ul>
+
+</div>
+
+
+6d5
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <div class="doc">
+        <bdi>teaching/infoh511.txt</bdi> · Last modified: 2014/04/24 17:10 by <bdi>svsummer</bdi>      </div>
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+                      </div>
+      <div class="bar-right" id="bar__bottomright">
+                                <form class="button btn_login" method="get" action="/public/teaching/infoh511"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="c1e0316edec7e3b87d289fb60f3b35db" /><input type="submit" value="Login" class="button" title="Login" /></div></form>        <!--<form class="button btn_index" method="get" action="/public/teaching/infoh511"><div class="no"><input type="hidden" name="do" value="index" /><input type="submit" value="Sitemap" class="button" accesskey="x" title="Sitemap [X]" /></div></form>-->
+        <a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+      
+       <a href="http://www.ulb.ac.be"><div class="logo_bottom"></div></a>
+
+</div>
+
+
+
+
+
+
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript">_uacct = "UA-2630307-1";urchinTracker();</script>
+
+
+
+
+</div>
+
+<div class="no"><img src="/public/lib/exe/indexer.php?id=teaching%3Ainfoh511&amp;1537805766" width="2" height="1" alt="" /></div>
+</body>
+</html>
+
+0
+

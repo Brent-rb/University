@@ -1,0 +1,3 @@
+TestModerator:qwerty
+TestGebruiker1:azerty
+TestAdmin:blokus

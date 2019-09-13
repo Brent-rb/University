@@ -1,0 +1,40 @@
+1)
+Java:
+- Heeft data types bij variabelen
+- Moet gecompiled worden in machine taal die dan door da java virtual machine wordt uitgevoerd
+- Java programmas zijn zelfstandig uitvoerbaar
+
+Javascript:
+- Script taal
+- Moet niet gecompiled worden, wordt door interpreter uitgevoerd
+- Brengt content naar de browser en de browser voert deze uit --> geen zelfstandig programma
+- Geen datatypes, variabelen kunnen alles bevatten
+
+
+2)
+Als men enkel in de browser zou controleren op input dan zou dit omzeild kunnen worden wanneer men javascript uitschakeld. Hiervoor implementeren we dan best ook een server side controle.
+
+Het voordeel aan het in de browser controleren van input is dat men niet eerst en request naar de server moet sturen dus de client moet niet gerefreshed worden en er moet minder werkt vericht worden door de server.
+
+3)
+Undefined wilt zeggen dat er geen waarde aan een variabele is toegekend of wanneer men perongeluk een return statement is vergeten. Null betekent dat er express geen waarde wordt terug gegeven / in de variabele staat. 
+
+NAN is wanneer er na een aritmetische operatie een ongeldige uitkomst wordt geleverd.
+
+4)
+De gelijkheidscheck == gaat eerst 1 van de 2 opperanden converteren van datatype voor hij de gelijkheid gaat testen.
+
+De gelijkheidscheck === doet deze conversie niet.
+
+5)
+Document.write() gaat text in de output stream schrijven waar het script wordt opgeroepen. Deze kan er na niet meer verwwijdert worden.
+Men kan beter gebruik maken van Document.getElementById().innerHTML = "" aangezien deze gebruikt maakt van het Document Object Model. 
+
+Voor debug kan men met console.log() data uitschrijven
+En console.error()
+
+6)
+Nee, een post-request kan ook aangepast worden met een proxy server.
+
+
+

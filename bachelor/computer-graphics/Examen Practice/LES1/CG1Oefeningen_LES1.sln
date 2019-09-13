@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CG1Oefeningen_LES1", "CG1Oefeningen_LES1.vcproj", "{2083C49A-9FE6-4EB5-A458-22EC4CCEB60E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2083C49A-9FE6-4EB5-A458-22EC4CCEB60E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2083C49A-9FE6-4EB5-A458-22EC4CCEB60E}.Debug|Win32.Build.0 = Debug|Win32
+		{2083C49A-9FE6-4EB5-A458-22EC4CCEB60E}.Release|Win32.ActiveCfg = Release|Win32
+		{2083C49A-9FE6-4EB5-A458-22EC4CCEB60E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+EndGlobal

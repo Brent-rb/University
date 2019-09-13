@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#main {
+	float: left;
+	list-style-type: upper-roman;
+}
+
+#main > ol {
+	list-style-type: upper-alpha;
+}
+
+#rock {
+	background-color: red;
+}
+
+#electronica {
+	background-color: black;
+	color: white;
+}
+
+
+#film1 {
+	list-style-image: url(1.jpg);
+	list-style-position: inside;
+}
+
+#film2 {
+	list-style-image: url(2.jpg);
+	list-style-position: inside;
+}
+
+#film3 {
+	list-style-image: url(3.jpg);
+	list-style-position: inside;
+}

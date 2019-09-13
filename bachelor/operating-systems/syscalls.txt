@@ -1,0 +1,26 @@
+open()
+	Open and possibly create a file or device
+	Given a path for a file, returns a file descriptor (a small positive integer for following syscalls)
+
+write()
+	Write to a file descriptor.
+	Returns number of bytes written.
+	Or -1 on error.
+
+close()
+	Close a file descriptor.
+	Returns 0 on succes, -1 on fail
+
+read()
+	Read from a file descriptor
+	read() attemps to count bytes from a file descriptor into a buffer.
+	On succes returns amount of bytes read.
+
+munmap() 
+	Unmap files or devices into memory
+	return 0 or -1 on failure.
+
+mprotect()
+	Set protection to a part of memory.
+	If the process tries to access memory out of this boundery -> sigsveg fault
+

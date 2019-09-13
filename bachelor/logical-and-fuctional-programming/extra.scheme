@@ -1,0 +1,94 @@
+
+(define frequency
+	(lambda (loa col)
+		(cond
+			((null? loa) (col '()))
+			(else 
+				(frequency (cdr loa) 
+					(lambda (lof)
+						(col (add-freq (car loa) lof))
+					)
+				)
+			)
+		)
+	)
+)
+
+(define add-freq
+	(lambda (atom lof)
+		(cond
+			((null? lof) (cons (cons '1 (cons atom '())) '()))
+			((eq? atom (car (cdr (car lof)))) (cons (cons (+ (car (car lof)) 1) (cons atom '())) (cdr lof)))
+			(else 
+				(cons (car lof) (add-freq atom (cdr lof)))
+			)
+		)
+	)
+)
+
+(define max-finder
+	(lambda (lof)
+		(cons lof (cons (findMax lof '(0 null)) '()))
+	)
+)
+
+(define findMax
+	(lambda (lof loh)
+		(cond
+			((null? lof) loh)
+			((> (car (car lof)) (car loh)) (findMax (cdr lof) (car lof)))
+			(else (findMax (cdr lof) loh))
+		)
+	)
+)
+
+(define min-finder
+	(lambda (lof)
+		(cons lof (cons (findMin lof (car lof)) '()))
+	)
+)
+
+(define findMin
+	(lambda (lof lom)
+		(cond 
+			((null? lof) lom)
+			((< (car (car lof)) (car lom)) (findMin (cdr lof) (car lof)))
+			(else (findMin (cdr lof) lom))
+		)
+	)
+)
+
+
+
+
+(define special-counter
+	(lambda (l g)
+		(special-counter-inner l g special-col)
+	)
+)
+
+(define special-counter-inner
+	(lambda (l g col)
+		(cond
+			((null? l) (col '(0 1)))
+			(else
+				(special-counter-inner (cdr l) g
+					(lambda (lon)
+						(cond 
+							((< (car l) g) (col (cons (+ (car lon) (car l)) (cons (* (car l) (car (cdr lon))) '()))))
+							(else (col (cons (+ (car lon) (car l)) (cons (car (cdr lon)) '()))))
+						)
+					)
+				)
+			)
+		)
+	)
+)
+
+(define sepcial-col
+	(lambda (lon)
+		(lon)
+	)
+)
+
+(special-counter '(1 2 3 4 5 6) 4)

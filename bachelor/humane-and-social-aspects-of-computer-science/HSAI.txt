@@ -1,0 +1,40 @@
+1) Open App Evolve SMS
+2) Linker menu openen
+3) Nieuwe SMS aantikken
+4) Naam begunstigde intypen / Zoeken
+5) Contact aantikken (Voor meerdere personen ga terug naar 4)
+6) Sms typen
+7) Verzenden
+
+1) Open Hangout App
+2) Nieuwe sms aantikken of ander tab openen
+3) Contact selecteren
+4) In geval van meerdere contacten op "Anyone Else?" -> Stap 3 maar dan met checkboxes naast de contacten -> Ok duwen
+5) Sms typen
+6) Sms verzenden
+
+Conclusie: Hangout is gebruiksvriendelijk voor naar meerdere contacten te smsen, buiten dit zijn ze vrijwel gelijk in het gebruiks gemak, EvolveSMS is wel minder druk dan Hangout en zal bij sommige gebruikers beter in de smaak vallen. Dit is tevens het voordeel aan Android dat men eender welke SMS applicatie kan instellen als standaard SMS-applicatie.
+
+
+2.2)
+
+Google Play Music:
+
+Time To Learn: Voor mensen die gewend zijn aan het android eco-systeem zullen geen probleem hebben met het besturen van de interface. Mensen die echter voor de eerste keer een Android toestel gebruiken kunnen eventueel even problemen met het navigeren aangezien het menuknop redelijk verborgen linksboven (ook accesible via een swide vanaf linker border van het scherm). Hierna kan men een pagina kiezen "Mijn Bibliotheek" en deze is goed opgedeeld in tab-bladen waardoor het navigeren door de bibliotheek zeer intuitief is.
+
+Speed of performance:
+
+Dit hangt af van de manier waarop men muziek wilt luisteren. Als men hiervoor al een afspeellijst had gemaakt kan men deze waarschijnlijk vanaf het start scherm selecteren en meteen beginnen met muziek luisteren. Anders kan men via de bibliotheek naar een nummer zoeken wat in vrij weinig stappen kan maar als de bibliotheek groot is kan het zoeken wel even duren. De lijst is wel alfabetisch gesorteerd waardoor het zoeken nu ook weer niet zo moeilijk is.
+Er is tevens een zoek functie wat het proces kan versnellen.
+
+Rate of errors by users: 
+
+Wanneer men een verkeerd liedje selecteerd begint dit te spelen in de achtergrond maar de lijst blijft open dus men kan snel een ander liedje selecteren. Het liedje dat afgespeeld word kan vanonder aan het scherm ook gepauzeerd worden.
+
+Retention over Time: 
+
+Bij Android hebben veel Apps dezelfde menu structuur, dit heeft als resultaat dat het onthouden van een layout makkelijk is. De rest van de app is zeer intuitief dus deze moet niet echt onthouden worden.
+
+Subjective Satisfaction:
+
+De App ziet er mooi uit en geeft op een goede manier de bibliotheek weer 

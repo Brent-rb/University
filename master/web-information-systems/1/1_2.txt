@@ -1,0 +1,51 @@
+1_2_GET.output vs 1_2_HEAD.output
+
+A HEAD request only return the headers. They are exactly the same as the ones 
+made in the GET request with the exception of the Transfer-Encoding header.
+This one is only present in the GET request. This header indicates that 
+the body of the request will be transferred in chunks. Since the HEAD request
+reply has no body it does not add this header. 
+
+1_2_IMAGE
+The content-type is "image/gif". The data starts with "GIF" as well.
+After removing the headers from the output, the image is distorted. 
+
+1_2_GOOGLE
+Accept-Language: de
+
+Tested with host: google.de, redirected to www.google.de.
+Got a german translation.
+Tested with host: www.google.be 
+Got a german translation
+
+1_2_HTML vs 1_2_RDF
+GET /resource/Berlin
+Accept: application/rdf+xml 
+
+This request resulted in a content negotiation, I got a couple of candidates from which I could choose, "/data/Berlin.xml" had content type "application/rdf+xml" 
+so I made a different request 
+
+GET /data/Berlin.xml
+Accept: application/rdf+xml 
+
+output can be found in 1_2_RDF.output
+
+-----------------------------------------------------------
+
+GET /resource/Berlin
+Accept: text/html 
+
+This request redirected me to /page/Berlin
+
+GET /page/Berlin
+Accept: text/html
+
+output can be found in 1_2_HTML.output
+
+------------------------------------------------------------
+
+Comparing the outputs of both requests, the content type header differs
+and the RDF version has an extra header.
+
+The different outputs also differ in representation.
+The HTML one is in HTML and the RDF/XML one is in XML. 

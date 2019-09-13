@@ -1,0 +1,10 @@
+18.3.1)
+	- Breadte First Search, wanneer eindknoop gevonden --> Korste pad gevonden wegens Breadte First Seach.
+	- Zeggen Breadte First Search doorlopen en zeggen wat men per knoop doet
+
+18.3.2)
+	- Boog van X waarde opsplitsen in X-1 knopen met waarde 1
+
+18.4)
+	- DFS Afgaan, knopen voor elkaar toevoegen
+	

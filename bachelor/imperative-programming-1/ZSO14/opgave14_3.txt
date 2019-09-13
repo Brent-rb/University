@@ -1,0 +1,9 @@
+opgave14_3.txt
+
+f(4,3) return 4 * f(4, 2);
+	f(4,2) return 4 * f(4, 1);
+		f(4,1) return 4 * f(4, 0);
+			f(4, 0) return (1)
+		f(4,1) return 4 * 1; = 4
+	f(4,2) return 4 * 4; = 16
+f(4,3) return 4 * 16; = 64

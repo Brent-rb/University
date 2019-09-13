@@ -1,0 +1,3 @@
+opgave14_4.txt
+
+Het gaat de string van achter naar voor lezen en achter elkaar plakken, dus deze functie draait de string om.

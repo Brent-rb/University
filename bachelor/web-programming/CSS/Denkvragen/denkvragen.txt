@@ -1,0 +1,85 @@
+Denkvragen)
+1)
+De selector heeft als doel het specifieren van het element waarop we de opmaak die volgt willen toepassen.
+Zo kunnen we voor verschillende elementen een andere opmaak maken.
+
+als we een id willen selecteren kunnen we de selector 
+#id {
+	
+}
+(waar id dan een naam van een id is in de html pagina)
+
+gebruiken, als we een class willen selecteren kunnen we de selector
+
+.class {
+	
+}
+(waar class dan een naam is van een class in de html pagina)
+
+gebruiken.
+
+2)
+Elke browser heeft zijn eigen default opmaak, als je wilt dat je site er op alle browsers er hetzelfde uitziet kan je best van 0 beginnen en alles zelf specifieren.
+Zo heb je de meest universele opmaak in alle browsers.
+
+Als men dus niet reset kan de website er verschillend uitzien op verschillende browsers.
+
+webkit:
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+mozilla:
+thead {
+   display: table-header-group;
+   vertical-align: middle;
+}
+
+
+mozilla:
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+  line-height: normal;
+}
+
+webkit:
+sub {
+    vertical-align: sub;
+    font-size: smaller
+}
+
+
+3)
+Er wordt met een anchor naar elke onderverdeling gesprongen in de pagina met het id van de onderverdeling wat overeenkomt met de titel van die onderverdeling.
+
+4)
+!important wordt toegevoegd aan css wanneer men wilt dat deze attribuut prioriteit krijgt over dezelfde attribuut in een andere selector waar geen !important bij staat.
+
+
+5)
+De specific value wordt bepaald door uit een lijst van opmaak attributen degenen kiezen die de hoogste prioriteit heeft, of informatie uit de parent halen.
+
+Een computed value is de value die rechtstreeks uit de css wordt gehaald (100px) of berekend (100%, 2em, 3rem).
+
+Een actual value is een benadering van de computed value.
+
+
+Bij het inzoomen en uitzoomen zal het computed value veranderen met als gevolgd dat het actual value ook verandert.
+
+6)
+Parse errors
+- Eigenschap bestaat niet
+- Puntkomma vergeten
+- Ongeldig getal
+
+
+
+Oefeningen:
+extern: 
+Aanpassingen in 1 style file kan de opmaak van alle html paginas die die stylesheet gebruikt aanpassen, met inline en interen kan dit niet --> veel onnodig werk
+inline:
+Opmaak kan via php geplakt worden per item van de database
+intern:
+Het bestand kan zonder css bestand functioneren

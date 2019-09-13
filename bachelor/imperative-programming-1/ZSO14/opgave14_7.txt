@@ -1,0 +1,3 @@
+opgave14_7.txt
+
+Deze functie gaat het getal op positie 'pos' afdrukken en dan het volgend getal afdrukken zolang dit getal bestaat.

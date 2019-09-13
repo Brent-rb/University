@@ -1,0 +1,141 @@
+Databases ZSO 1)
+	6.1.2)	
+	a)
+	SELECT address 
+	FROM Studio 
+	WHERE name = 'MGM studios';
+
+	b)
+	SELECT birthdate 
+	FROM MovieStar 
+	WHERE name = 'Sandra Bullock';
+
+	c)
+	SELECT starName 
+	FROM StarsIn 
+	WHERE movieYear = 1980 OR movieTitle LIKE '%Star%';
+
+	d)
+	SELECT name 
+	FROM MovieExec 
+	WHERE netWorth >= 1000000;
+
+	e)
+	SELECT name 
+	FROM MovieStar 
+	WHERE gender = 'M' OR address LIKE '%Malibu%';
+
+
+	a) Find the class name and country for all classes with at least 12 guns.
+
+
+
+
+	6.1.4)w
+	d) 
+	SELECT ship, battle 
+	FROM Outcomes 
+	WHERE result = 'sunk';
+
+	e)
+	SELECT name 
+	FROM Ships 
+	WHERE name = class;
+
+	f)
+	SELECT name 
+	FROM Ships 
+	WHERE name LIKE '% % %';
+
+
+
+	6.1.5)
+	a) When a is an integer. NULL --> 0.5
+	b) When a or b is an integer valid to a = 0 or b = 10, if b = 10 a may be NULL and vice versa.
+	c) Only a = 20 and b = 10 will satisfy this condition, because AND is minimum.
+	d) a is b when one or both NULL outcome = NULL
+	e) Only when A > B , when one or both NULL outcome = NULL
+
+	6.22)
+	a) Find those manufacturers that sell PC's but not Laptop's.
+	b) Give the manufacturers and speed of laptops with a hard disk of at least 100gb
+	c) Find the model numbe and price of all products (of any type) made by manufacturer C
+
+	Product(maker, model , type)
+	PC(model, speed, ram, hd, price)
+	Laptop(model, speed, ram, hd , screen, price)
+	Printer(model, color, type, price)
+
+	a) 	(SELECT maker 
+		FROM Product 
+		WHERE type = 'pc') 
+
+		EXCEPT 
+
+		(SELECT maker
+		FROM Product 
+		WHERE type = 'laptop');
+
+	b) 	SELECT maker, speed 
+		FROM Product, Laptop 
+		WHERE Product.model = Laptop.model AND hd >= 100;
+
+	c) 	(SELECT Product.model, price 
+		FROM Product, PC 
+		WHERE maker = 'C' AND Product.model = PC.model)
+
+		UNION
+
+		(SELECT Product.model, price 
+		FROM Product, Laptop 
+		WHERE maker = 'C' AND Product.model = Laptop.model)
+
+		UNION
+
+		(SELECT Product.model, price 
+		FROM Product, Printer 
+		WHERE maker = 'C' 
+		AND Product.model = Printer.model);
+
+
+	6.2.3)
+	Classes(class, type, country, numGuns, bore, displacement)
+	Ships(name, class, launched)
+	Battles(name, date)
+	Outcomes(ship, battle, result)
+
+
+	a) List the name, displacement, and number of guns of the ships engaged in the battle of North Cape
+	b) Find the ships heavier than 37000 tons
+	c) List all the ships mentioned in the database
+	d) Find those battles with at least three ships of the same country
+	e) Find those countries that have both battleships and battlecruisers
+	f) Find those ships that were damaged in one battle, but later fought in another
+
+
+	a)
+	SELECT Ships.name, displacement, numGuns 
+	FROM Classes, Ships, Outcomes 
+	WHERE Outcomes.battle = 'North Cape' AND Outcomes.ship = Ships.name AND Ships.class = Classes.class;
+
+	b)
+	SELECT Ships.name
+	FROM Classes, Ships
+	WHERE Ships.class = Classes.class AND bore >= 37000;
+
+	c)
+	(SELECT name
+	FROM Ships)
+
+	UNION
+
+	(SELECt ship
+	FROM Outcomes);
+
+	d)
+	SELECT o1.battle
+	FROM Outcomes o1, Outcomes o2, Outcomes o3, Ships s1, Ships s2, Ships s3, Classes c1, Classes c2, Classes c3
+	WHERE o1.ship <> o2.ship  AND o2.ship <> o3.ship AND o1.battle = o2.battle AND o2.battle = o3.battle AND o1.ship = s1.name AND o2.ship = s2.name AND o3.ship = s3.name AND s1.class = c1.class AND s2.class = c2.class AND s3.class = c3.class AND c1.country = c2.country AND c2.country = c3.country;
+
+	
+

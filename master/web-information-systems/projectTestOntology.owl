@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/brent/ontologies/2018/11/wis#"
+     xml:base="http://www.semanticweb.org/brent/ontologies/2018/11/wis"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wis="http://www.semanticweb.org/brent/ontologies/2018/11/wis#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#hasSkill">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#knownBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#knownBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#knownBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#neededBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#neededBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#needsSkill"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#needsSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#needsSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Bert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Bert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+        <hasName rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Bert"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Brent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Brent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+        <hasName rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Brent"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#CombiJob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#CombiJob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+        <needsSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor"/>
+        <needsSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+        <neededBy rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#CombiJob"/>
+        <neededBy rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumorJob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumorJob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumorJob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+        <needsSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Olivier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Olivier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+        <neededBy rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#CombiJob"/>
+        <neededBy rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#ProgrammingJob"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/brent/ontologies/2018/11/wis#ProgrammingJob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#ProgrammingJob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+        <needsSkill rdf:resource="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Skill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Vacancy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Bert"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Brent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Olivier"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#CombiJob"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumorJob"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#ProgrammingJob"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#FlauweHumor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/brent/ontologies/2018/11/wis#Programming"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+

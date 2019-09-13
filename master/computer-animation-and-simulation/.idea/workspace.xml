@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="CAS" targetName="CAS" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49f44fca-933c-46d1-acd8-ee82e81a5798" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cameras/DirectedCamera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cameras/DirectedCamera.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clickable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clickable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FFD.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FFD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FFDClickable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FFDClickable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluids/FluidGrid2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fluids/FluidGrid2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Help.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Help.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Particle.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Particle.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParticleEmitter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParticleEmitter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/EaseInEaseOut.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/EaseInEaseOut.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/InterpolatedPath.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/InterpolatedPath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/LinearController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/LinearController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/Path.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/Path.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/PathController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/PathController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/RotationPath.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/RotationPath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/Spline.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/Spline.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/TimePoint.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Path/TimePoint.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderables/Line.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderables/Line.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderables/Model.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderables/Model.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shaders/ParticleFragmentShader.fs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shaders/ParticleVertexShader.vs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkyBox.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkyBox.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cameras/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cameras/Camera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cameras/Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cameras/Camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cameras/FirstPersonCamera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cameras/FirstPersonCamera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cameras/FirstPersonCamera.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cameras/FirstPersonCamera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluids/FluidGrid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Fluids/FluidGrid.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fluids/FluidGrid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Fluids/FluidGrid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBuffer/InputBuffer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InputBuffer/InputBuffer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBuffer/InputBuffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/InputBuffer/InputBuffer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBuffer/Key.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InputBuffer/Key.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBuffer/Key.h" beforeDir="false" afterPath="$PROJECT_DIR$/InputBuffer/Key.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBuffer/Mouse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/InputBuffer/Mouse.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InputBuffer/Mouse.h" beforeDir="false" afterPath="$PROJECT_DIR$/InputBuffer/Mouse.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenGLRenderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/OpenGLRenderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenGLRenderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/OpenGLRenderer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderables/Renderable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Renderables/Renderable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderables/Square.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Renderables/Square.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderables/Square.h" beforeDir="false" afterPath="$PROJECT_DIR$/Renderables/Square.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderables/Transformable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Renderables/Transformable.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderables/VertexPrimitive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Renderables/VertexPrimitive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderables/VertexPrimitive.h" beforeDir="false" afterPath="$PROJECT_DIR$/Renderables/VertexPrimitive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/SWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/BasicFragmentShader.fs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/BasicFragmentShader.fs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/BasicVertexShader.vs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/BasicVertexShader.vs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/ShaderProgram.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/ShaderProgram.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shaders/ShaderProgram.h" beforeDir="false" afterPath="$PROJECT_DIR$/Shaders/ShaderProgram.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textures/ImageLoader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Textures/ImageLoader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CAS" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CAS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CAS.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CAS.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Cameras/Camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Cameras/Camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Cameras/FirstPersonCamera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Cameras/FirstPersonCamera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Fluids/FluidGrid.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Fluids/FluidGrid.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Fluids/FluidPoint.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Fluids/FluidPoint.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/GameObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/GameObject.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/InputBuffer/InputBuffer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/InputBuffer/InputBuffer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/InputBuffer/Key.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/InputBuffer/Key.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/InputBuffer/Mouse.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/InputBuffer/Mouse.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/OpenGLRenderer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/OpenGLRenderer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Cube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Cube.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Renderable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Renderable.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Square.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Square.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Transformable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Transformable.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Triangle.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/Triangle.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/VertexPrimitive.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Renderables/VertexPrimitive.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/SWindow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/SWindow.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Shaders/ShaderProgram.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Shaders/ShaderProgram.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Textures/ImageLoader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/Textures/ImageLoader.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CAS.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/peda-session-unknown.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/peda-session-unknown.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CAS" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CAS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CAS.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CAS.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Cameras/FirstPersonCamera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Cameras/FirstPersonCamera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Fluids/FluidGrid.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Fluids/FluidGrid.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Fluids/FluidPoint.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Fluids/FluidPoint.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/GameObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/GameObject.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/InputBuffer/InputBuffer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/InputBuffer/InputBuffer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/InputBuffer/Key.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/InputBuffer/Key.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/InputBuffer/Mouse.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/InputBuffer/Mouse.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/OpenGLRenderer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/OpenGLRenderer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Cube.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Cube.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Renderable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Renderable.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Square.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Square.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Transformable.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Transformable.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Triangle.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/Triangle.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/VertexPrimitive.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Renderables/VertexPrimitive.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/SWindow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/SWindow.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Shaders/ShaderProgram.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/Shaders/ShaderProgram.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CAS.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-release/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="OpenGLRenderer.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/OpenGLRenderer.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="570">
+                  <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#99#119#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OpenGLRenderer.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/OpenGLRenderer.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-75">
+                  <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#40#58#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="basic_string.h" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/include/c++/5/bits/basic_string.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="74820">
+                  <caret line="4988" selection-start-line="4988" selection-end-line="4988" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DirectedCamera.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Cameras/DirectedCamera.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                  <folding>
+                    <element signature="e#40#67#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageLoader.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Textures/ImageLoader.h">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="ImageLoader.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Textures/ImageLoader.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="json.hpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/json.hpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="14610">
+                  <caret line="974" selection-start-line="974" selection-end-line="974" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Particle.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Particle.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="735">
+                  <caret line="49" selection-start-line="49" selection-end-line="49" />
+                  <folding>
+                    <element signature="e#40#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BasicFragmentShader.fs.glsl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Shaders/BasicFragmentShader.fs.glsl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Particle.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Particle.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+                  <folding>
+                    <element signature="e#88#111#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParticleEmitter.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ParticleEmitter.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1170">
+                  <caret line="78" selection-start-line="78" selection-end-line="78" />
+                  <folding>
+                    <element signature="e#40#68#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Square.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Renderables/Square.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParticleEmitter.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ParticleEmitter.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="480">
+                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParticleFragmentShader.fs.glsl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Shaders/ParticleFragmentShader.fs.glsl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParticleVertexShader.vs.glsl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Shaders/ParticleVertexShader.vs.glsl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ShaderProgram.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Shaders/ShaderProgram.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1620">
+                  <caret line="108" selection-start-line="108" selection-end-line="108" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GLSL Shader" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>swap</find>
+      <find>advection</find>
+      <find>update</find>
+      <find>pressureAcce</find>
+      <find>getPRopertyIndex</find>
+      <find>getPropertyIndex</find>
+      <find>FluidGrid</find>
+      <find>getCordinates</find>
+      <find>m_selected</find>
+      <find>.length()</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SkyBox.h" />
+        <option value="$PROJECT_DIR$/Renderables/Square.h" />
+        <option value="$PROJECT_DIR$/Renderables/Square.cpp" />
+        <option value="$PROJECT_DIR$/InputBuffer/Mouse.cpp" />
+        <option value="$PROJECT_DIR$/Renderables/Transformable.cpp" />
+        <option value="$PROJECT_DIR$/Path/Path.h" />
+        <option value="$PROJECT_DIR$/Path/Path.cpp" />
+        <option value="$PROJECT_DIR$/Path/SimplePath.h" />
+        <option value="$PROJECT_DIR$/Path/SimplePath.cpp" />
+        <option value="$PROJECT_DIR$/Path/InterpolatedPath.h" />
+        <option value="$PROJECT_DIR$/Path/RotationPath.cpp" />
+        <option value="$PROJECT_DIR$/Shaders/BasicVertexShader.vs.glsl" />
+        <option value="$PROJECT_DIR$/FFD.h" />
+        <option value="$PROJECT_DIR$/Clickable.cpp" />
+        <option value="$PROJECT_DIR$/Clickable.h" />
+        <option value="$PROJECT_DIR$/Renderables/Renderable.h" />
+        <option value="$PROJECT_DIR$/Renderables/Model.h" />
+        <option value="$PROJECT_DIR$/Renderables/VertexPrimitive.h" />
+        <option value="$PROJECT_DIR$/GameObject.cpp" />
+        <option value="$PROJECT_DIR$/Renderables/Model.cpp" />
+        <option value="$PROJECT_DIR$/Path/InterpolatedPath.cpp" />
+        <option value="$PROJECT_DIR$/GameObject.h" />
+        <option value="$PROJECT_DIR$/FFDClickable.h" />
+        <option value="$PROJECT_DIR$/FFDClickable.cpp" />
+        <option value="$PROJECT_DIR$/FFD.cpp" />
+        <option value="$PROJECT_DIR$/Renderables/VertexPrimitive.cpp" />
+        <option value="$PROJECT_DIR$/SkyBox.cpp" />
+        <option value="$PROJECT_DIR$/Cameras/Camera.h" />
+        <option value="$PROJECT_DIR$/Cameras/FirstPersonCamera.h" />
+        <option value="$PROJECT_DIR$/Cameras/DirectedCamera.h" />
+        <option value="$PROJECT_DIR$/Cameras/FirstPersonCamera.cpp" />
+        <option value="$PROJECT_DIR$/Cameras/Camera.cpp" />
+        <option value="$PROJECT_DIR$/Cameras/DirectedCamera.cpp" />
+        <option value="$PROJECT_DIR$/Path/LinearController.cpp" />
+        <option value="$PROJECT_DIR$/Path/RotationPath.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/SWindow.h" />
+        <option value="$PROJECT_DIR$/SWindow.cpp" />
+        <option value="$PROJECT_DIR$/Textures/ImageLoader.cpp" />
+        <option value="$PROJECT_DIR$/Shaders/ParticleVertexShader.fs.glsl" />
+        <option value="$PROJECT_DIR$/Shaders/ParticleFragmentShader.fs.glsl" />
+        <option value="$PROJECT_DIR$/Cameras/Particle.h" />
+        <option value="$PROJECT_DIR$/Help.h" />
+        <option value="$PROJECT_DIR$/Help.cpp" />
+        <option value="$PROJECT_DIR$/ParticleEmitter.h" />
+        <option value="$PROJECT_DIR$/Particle.h" />
+        <option value="$PROJECT_DIR$/Particle.cpp" />
+        <option value="$PROJECT_DIR$/OpenGLRenderer.h" />
+        <option value="$PROJECT_DIR$/ParticleEmitter.cpp" />
+        <option value="$PROJECT_DIR$/Shaders/ParticleVertexShader.vs.glsl" />
+        <option value="$PROJECT_DIR$/OpenGLRenderer.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CAS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CAS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CAS" type="462c0819:PsiDirectoryNode" />
+              <item name="Cameras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CAS" type="462c0819:PsiDirectoryNode" />
+              <item name="Renderables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CAS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CAS" type="462c0819:PsiDirectoryNode" />
+              <item name="Shaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-release" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CAS">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CAS" RUN_TARGET_NAME="CAS" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="CAS Release" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAS" TARGET_NAME="CAS" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/cmake-build-release/CAS">
+      <method>
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_make" />
+      </method>
+    </configuration>
+    <configuration name="CAS" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../input.json" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAS" TARGET_NAME="CAS" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CAS" RUN_TARGET_NAME="CAS" />
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.CAS" />
+      <item itemvalue="Application.CAS Release" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49f44fca-933c-46d1-acd8-ee82e81a5798" name="Default" comment="" />
+      <created>1510334230917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1510334230917</updated>
+      <workItem from="1510334233457" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="28000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12604167" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3287234" />
+      <window_info anchor="bottom" id="CMake" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287234" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12604167" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287234" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3287234" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Clickable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clickable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fluids/FluidGrid.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="465" column="27" selection-start-line="434" selection-start-column="4" selection-end-line="465" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/Renderable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/VertexPrimitive.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/Model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path/InterpolatedPath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path/InterpolatedPath.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
+          <folding>
+            <element signature="e#40#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="49" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/Transformable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-529" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/Transformable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="170" column="50" selection-start-line="170" selection-start-column="50" selection-end-line="170" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FFDClickable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FFDClickable.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/Model.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="196" column="60" selection-start-line="195" selection-start-column="12" selection-end-line="196" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FFD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="79" column="121" selection-start-line="79" selection-start-column="121" selection-end-line="79" selection-end-column="121" />
+          <folding>
+            <element signature="e#40#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SkyBox.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/VertexPrimitive.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="264" column="41" lean-forward="true" selection-start-line="264" selection-start-column="41" selection-end-line="264" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cameras/Camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cameras/DirectedCamera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cameras/FirstPersonCamera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cameras/FirstPersonCamera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="9" column="136" selection-start-line="9" selection-start-column="136" selection-end-line="9" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cameras/Camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path/Path.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path/LinearController.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path/RotationPath.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Path/RotationPath.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SWindow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SWindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="77" column="61" selection-start-line="77" selection-start-column="61" selection-end-line="77" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textures/ImageLoader.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Textures/ImageLoader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14610">
+          <caret line="974" selection-start-line="974" selection-end-line="974" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cameras/DirectedCamera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#40#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/BasicVertexShader.vs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Help.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Help.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParticleEmitter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Particle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="e#88#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/BasicFragmentShader.fs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/ParticleFragmentShader.fs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/basic_string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74820">
+          <caret line="4988" selection-start-line="4988" selection-end-line="4988" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenGLRenderer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#99#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/ShaderProgram.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shaders/ParticleVertexShader.vs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParticleEmitter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#40#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/ParticleSquare.cpp" />
+    <entry file="file://$PROJECT_DIR$/Particle.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#40#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Renderables/ParticleSquare.h" />
+    <entry file="file://$PROJECT_DIR$/Renderables/Square.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenGLRenderer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+          <folding>
+            <element signature="e#40#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

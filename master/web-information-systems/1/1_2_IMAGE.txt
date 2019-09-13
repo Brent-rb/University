@@ -1,0 +1,3 @@
+GET /public/lib/tpl/ulb/images/footer.gif HTTP/1.1
+Host: cs.ulb.ac.be
+

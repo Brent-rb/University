@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+
+		#move {
+			width: auto;
+		}
+	</style>
+	<title>4</title>
+</head>
+<body>
+<div id="move">Teststestes</div>
+<script>
+
+var left = true;
+var percent = 0;
+document.getElementById("move").style.marginLeft = "0px";
+
+function move() {	
+	if(percent == (window.innerWidth))
+		left = false;
+	if(percent == 0)
+		left = true;
+	if(left)
+		percent++;
+	else
+		percent--;
+
+	document.getElementById("move").style.marginLeft = "" + percent + "px";
+	console.log("" + percent + "px");
+}
+window.setInterval("move()", 1);
+
+
+</script>
+</body>
+</html>

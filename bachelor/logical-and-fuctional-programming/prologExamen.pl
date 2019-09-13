@@ -1,0 +1,428 @@
+circle(point(1,2), 5).
+circle(point(20,30), 1).
+circle(point(20,6), 5).
+circle(point(9,5), 6).
+
+/*
+circle(P, R), R =< 5.
+circle(_, R).
+circle(point(20, Y), R).
+circle(P, R), P = point(20, _).
+*/
+
+letter(a).
+letter(b).
+letter(c).
+letter(d).
+letter(e).
+letter(f).
+
+digit(0).
+digit(1).
+digit(2).
+digit(3).
+digit(4).
+digit(5).
+digit(6).
+digit(7).
+digit(8).
+digit(9).
+
+letterOrDigit(X) :-
+	letter(X);
+	digit(X).
+
+identifier(ONE) :-
+	letter(ONE).
+
+identifier(ONE, TWO) :-
+	identifier(ONE),
+	letterOrDigit(TWO).
+
+identifier(ONE, TWO, THREE) :-
+	identifier(ONE, TWO),
+	letterOrDigit(THREE).
+
+identifier(ONE, TWO, THREE, FOUR) :-
+	identifier(ONE, TWO, THREE),
+	letterOrDigit(FOUR).
+
+identifier(ONE, TWO, THREE, FOUR, FIVE) :-
+	identifier(ONE, TWO, THREE, FOUR),
+	letterOrDigit(FIVE).
+
+str(a,b,2,c).
+str(b).
+str(t,a).
+str(a,b,c).
+str(1,2,3,4,5).
+
+beginLetter(LETTER) :-
+	str(LETTER),
+	identifier(LETTER).
+
+beginLetter(LETTER) :-
+	str(LETTER, TWO),
+	identifier(LETTER, TWO).
+
+beginLetter(LETTER) :-
+	str(LETTER, TWO, THREE),
+	identifier(LETTER, TWO, THREE).
+
+beginLetter(LETTER) :-
+	str(LETTER, TWO, THREE, FOUR),
+	identifier(LETTER, TWO, THREE, FOUR).
+
+beginLetter(LETTER) :-
+	str(LETTER, TWO, THREE, FOUR, FIVE),
+	identifier(LETTER, TWO, THREE, FOUR, FIVE).
+
+
+rect(point(1,2), point(5,2), point(5,0), point(1,0)).
+rect(point(3,1), point(3,4), point(4,4), point(4,1)).
+rect(point(1,0), point(3,1), point(4,1), point(4,0)).
+rect(point(1,1), point(0,2), point(1,3), point(2,2)).
+rect(point(5,1), point(1,1), point(1,3), point(5,3)).
+
+regularRectangle(point(X1, Y1), point(X2, Y2), point(X3, Y3), point(X4, Y4)) :-
+	Y1 = Y2,
+	Y3 = Y4,
+	X2 = X3,
+	X1 = X4.
+
+regularRectangle(point(X1, Y1), point(X2, Y2), point(X3, Y3), point(X4, Y4)) :-
+	X1 = X2,
+	X3 = X4,
+	Y2 = Y3,
+	Y1 = Y4.
+
+f(1, one).
+f(s(1), two).
+f(s(s(1)), three).
+f(s(s(s(X))), N) :-
+	f(X, N).
+
+
+edge(a,b).
+edge(b,d).
+edge(d,e).
+edge(a,c).
+edge(c,d).
+edge(f,g).
+
+pad(X, Y) :-
+	edge(X, Z),
+	pad(Z, Y).
+
+pad(X, Y) :-
+	edge(X, Y).
+
+different(X, Y) :-
+	not(X = Y).
+
+conc([], L2, L3) :-
+	L3 = L2.
+
+conc([H1 | T1], L2, L3) :-
+	L3 = [H1 | L4],
+	conc(T1, L2, L4).
+
+revlist([], []).
+
+revlist([H1 | T1], L2) :-
+	revlist(T1, L3),
+	conc(L3, [H1], L2).
+
+multirember(X, [], []).
+
+multirember(X, [X | T], L2) :-
+	multirember(X, T, L2).
+
+multirember(X, [H1 | T1], L2) :-
+	different(H1, X),
+	multirember(X, T1, L3),
+	L2 = [H1 | L3].
+
+vervang(_, _, [], []).
+
+vervang(X, Y, [X | T], L2) :-
+	vervang(X, Y, T, L3),
+	L2 = [Y | L3].
+
+vervang(X, Y, [H | T], L2) :-
+	different(X, H),
+	vervang(X, Y, T, L3),
+	L2 = [H | L3].
+
+verschillend([H1 | T1], [H2 | T2]) :-
+	different(H1, H2);
+	verschillend(T1, T2).
+
+member2(X, [X | T]).
+
+member2(X, [H | T]) :-
+	different(X, H),
+	member2(X, T).
+
+zonderDubbels([], []).
+
+zonderDubbels([H | T], L2) :-
+	member2(H, T),
+	zonderDubbels(T, L2).
+
+zonderDubbels([H | T], L2) :-
+	not(member2(H, T)),
+	zonderDubbels(T, L3),
+	L2 = [H | L3].
+
+evenLengte([]).
+
+evenLengte([H | T]) :-
+	onevenLengte(T).
+
+onevenLengte([H | T]) :-
+	evenLengte(T).
+
+at(0, X, [X | T]).
+
+at(I, X, [H | T]) :-
+	at(I2, X, T),
+	I is I2 + 1.
+
+flatten([], []).
+
+flatten([H1 | T1], L2) :-
+	H1 = [_ | _],
+	flatten(H1, L3),
+	flatten(T1, L4),
+	conc(L3, L4, L2).
+
+flatten([H | T], L2) :-
+	flatten(T, L3),
+	L2 = [H | L3].
+
+rle([H | []], [[H] | []]).
+
+rle([H | T], L2) :-
+	rle(T, L3),
+	L3 = [H2 | T2],
+	H2 = [N, C],
+	H = C,
+	N2 is N + 1,
+	L2 = [[N2 | [H]] | T2].
+
+rle([H | T], L2) :-
+	rle(T, L3),
+	L3 = [H2 | T2],
+	H2 = [C | []],
+	H = C,
+	N2 is 2,
+	L2 = [[N2 | [H]] | T2].
+
+rle([H | T], L2) :-
+	rle(T, L3),
+	L2 = [[H] | L3].
+
+rotate(L1, 0, L1).
+
+rotate([H | T], X, L2) :-
+	X > 0,
+	conc(T, [H], L4),
+	X2 is X - 1,
+	rotate(L4, X2, L2).
+
+rember(X, [X | T], T).
+
+rember(X, [], []).
+
+rember(X, [H | T], L2) :-
+	rember(X, T, L3),
+	L2 = [H | L3].
+
+length([], 0).
+
+length([H | T], L) :-
+	length(T, L2),
+	L is L2 + 1.
+
+findMinLength([MIN | []], MIN).
+
+findMinLength([H | T], MIN) :-
+	length(H, L),
+	findMinLength(T, MIN2),
+	length(MIN2, LM),
+	L =< LM,
+	MIN = H.
+
+findMinLength([H | T], MIN) :-
+	findMinLength(T, MIN).
+
+sortSub([], []).
+
+sortSub(L1, L2) :-
+	findMinLength(L1, MIN),
+	rember(MIN, L1, L3),
+	sortSub(L3, L4),
+	L2 = [MIN | L4].
+
+faculteit(0, 1).
+faculteit(1, 1).
+faculteit(X, F) :-
+	X2 is X - 1,
+	faculteit(X2, F2),
+	F is X * F2.
+
+macht(X, 0, 1).
+macht(X, N, V) :-
+	N2 is N - 1,
+	macht(X, N2, V2),
+	V is V2 * X.
+
+priem(2).
+
+priem_inner(X, 1).
+
+priem_inner(X, D) :-
+	D >= 2,
+	MOD is X mod D,
+	not(MOD = 0),
+	D2 is D - 1,
+	priem_inner(X, D2).
+
+priem(X) :-
+	X2 is X - 1,
+	priem_inner(X, X2).
+
+
+p(1).
+p(2) :- !.
+p(3).
+
+female_author :-
+	author(X),
+	write(X),
+	write(' is an author'),
+	nl,
+	female(X),
+	write(' and female'),
+	nl.
+
+female_author :-
+	write('no such luck'),
+	nl.
+
+author(X) :- !,
+	name(X).
+
+author(_) :-
+	write('no more found'),
+	nl,
+	fail.
+
+name(sartre).
+name(calvino).
+name(joyce).
+female(murdoch).
+female(bembridge).
+
+
+x([], L, L).
+x([X | L1], L2, [X | L3]) :-
+	x(L1, L2, L3).
+
+q(X, L) :-
+	x(L1, [X | L2], L).
+
+cutOff(L1, 0, []).
+
+cutOff([H | T], COUNT, [H | L2]) :-
+	COUNT2 is COUNT - 1,
+	cutOff(T, COUNT2, L2).
+
+permuSearch(SUB, [H | T]) :-
+	LIST = [H | T],
+	length(SUB, X),
+	cutOff(LIST, X, CLIST),
+	permutation(CLIST, PLIST),	
+	SUB = CLIST;
+	permuSearch(SUB, T).
+
+permutation([], []).
+permutation([X | L], P) :-
+	permutation(L, L1),
+	insert(X, L1, P).
+
+insert(X,L,L2):-
+	delete(X,L2,L).
+
+delete(X, [X | L], L).
+delete(X, [H | L], [H | L1]) :-
+    delete(X, L, L1).
+
+rle_inner([], Tupple, [Tupple]).
+
+rle_inner([H1 | T1], [Number, Char], RunLength) :-
+	not(H1 = Char),
+	rle_inner(T1, [1, H1], RunLength2),
+	RunLength = [[Number, Char] | RunLength2].
+
+rle_inner([H1 | T1], [Number, H1], RunLength) :-
+	Number2 is Number + 1,
+	rle_inner(T1, [Number2, H1], RunLength).
+
+rle([H1 | T1], RunLength) :-
+	rle_inner(T1, [1, H1], RunLength).
+
+rle([],[]).
+
+rle([X], [[1, X]]).
+
+rle([X | L], [[C1, X] | L2]) :- 
+	rle(L, L1), 
+	L1=[[C, X] | L2], 
+	C1 is C + 1.
+
+rle([X | L], [[1 , X] | L1]):-  
+	rle(L, L1), 
+	L1=[[C, Y] | L2], 
+	different(X, Y).
+
+trap(0, 0).
+trap(1, 1).
+trap(2, 2).
+
+trap(Steps, Result) :-
+	Steps1 is Steps - 1,
+	Steps2 is Steps - 2,
+	trap(Steps1, Result1),
+	trap(Steps2, Result2),
+	Result is Result1 + Result2.
+
+max(X1, X2, Y) :-
+	X1 >= X2,
+	Y = X1, !.
+
+max(X1, X2, X2).
+
+getDepth([], 1).
+
+
+getDepth([[H | T] | T2], Depth) :-
+	getDepth([H | T], D1),
+	getDepth(T2, D2),
+	max(D1, D2, D3),
+	Depth is D3 + 1, !.
+
+
+getDepth([H | T], Depth) :-
+	getDepth(T, Depth),
+	!.
+
+getDepth(X, 0).
+
+ollie([], []).
+
+ollie([H | T], L) :-
+	getDepth(H, D),
+	ollie(T, L2),
+	L = [D | L2].

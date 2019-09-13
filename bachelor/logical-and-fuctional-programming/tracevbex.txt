@@ -1,0 +1,42 @@
+;e = (cond (nothing (quote something)) (else (quote nothing)))
+;table = (((nothing) (#t)))
+(*cond e table) 
+-->	(evcon (cond-lines-of e) table)
+	--> (cond-lines-of e)
+	<--	(cdr e) ; (cdr e) = ((nothing (quote something)) (else (quote nothing)))
+				; Voor gemak stellen we 'f' gelijk aan (cdr e).
+	(evcon f table)
+	--> ((else? (question-of (car f))))
+		--> (question of (car f))
+			--> (car f) ; dit is gelijk aan (nothing (quote something))
+			(first (nothing (quote something)))
+			--> (car (nothing (quote something))) ; dit is 'nothing
+		((else? 'nothing))
+			--> ((atom? 'nothing) (eq? 'nothing 'else)) ; false
+		((meaning 'nothing table) (meaning (answer-of (car f)) table)
+			--> ((expression-to-action 'nothing) 'nothing table)
+				--> ((atom? 'nothing)) ; true
+					--> (atom-to-action 'nothing)
+						--> ;alle tests falen, we komen uit bij else
+						<-- (else *identifier)
+					<--
+				(*identifier 'nothing table)
+					--> (lookup-in-table 'nothing table initial-table)
+						-->((null? table)) ;false
+						-->(lookup-in-entry 'nothing (car table) g) g = (lambda (name) (lookup-in-table name (cdr table) initial-table)
+							--> (lookup-in-entry-help 'nothing '(nothing) '(#t) g)
+								--> ((null? '(nothing)) ; false
+									((eq? 'nothing 'nothing) #f) ; true
+								<--
+							<--
+						<--
+					<--
+				<--
+			<--
+		(#t (meaning (answer-of '(nothing (quote something))) table)) ; true
+			(meaning (answer-of '(nothing (quote something))) table)
+				--> (second '(nothing (quote something)))
+					--> (car (cdr '(nothing (quote something))))
+					<--
+			(meaning '(quote something) table)
+			(meaning '(quote something) (((nothing) (#t))))

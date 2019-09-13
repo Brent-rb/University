@@ -1,0 +1,47 @@
+Denkvragen)
+
+1)
+WhatWG:
+Het Web Hypertext Application Technology Working Group is een groep van mensen die interesse hebben in het verbeteren van het web. Hun doel is vooral het verbeteren van HTML en zorgen voor de nodige API's die nodig/handig zijn voor het maken van Web applicaties.
+
+WhatWG zorgt voor vernieuwingen in HTML en W3C zorgt ervoor dat deze vernieuwingen compatibel zijn bij alle browsers en output devices.
+
+
+IETF:
+De Internet Engineering Task Force of IETF is een grote, open, internationale gemeenschap van netwerkontwerpers, - operators, -leveranciers en -onderzoekers die zich bezighoudt met de evolutie van de internetarchitectuur en de soepele werking van het internet. Deelname staat open voor alle geïnteresseerden.
+
+De IETF werkt op het internet protocool niveau en zorgt voor een standaard hiervan.
+Het W3C werkt op applicatie niveau en dus het WWW.
+
+
+2)
+<u>, <s>, <center>
+
+Deze 3 tags zorgen voor de opmaak van tekst, en om ervoor te zorgen dat structuur en opmaak gescheiden blijven worden deze tags niet meer ondersteund en kan men beter 
+hetzelfde effect met css verkrijgen.
+
+3)
+Vroeger werd bv een video bestand afspeelbaar gemaakt door een plugin te vermelden in een embeded tag waardoor het gelinkte bestand dus kon afspelen.
+Het nadeel was dus dat je de plugin moest installeren.
+
+
+4)
+youtube.be 		78 Errors, 7 warning(s)
+facebook.com 	38 Errors, 4 warning(s)
+google.be 		27 Errors, 4 warning(s)
+tweakers.net 	7 Errors, 2 warning(s)
+9gag.com 		20 Errors, 6 warning(s)
+warez-bb.org 	33 Errors, 29 warning(s)
+twitch.tv		102 Errors, 9 warning(s)
+
+Veelvoorkomende fouten:
+- Deprecated tags
+- Foutief gebruik van attributen
+- Meerdere id's met dezelfde naam
+
+5) 
+
+
+6)
+Ik heb de tutorial op deze site gelezen om te werking te begrijpen : http://code.tutsplus.com/tutorials/how-to-make-all-browsers-render-html5-mark-up-correctly-even-ie6--net-8669
+Er wordt gebruik gemaakt van css en javascript (Html5 Shiv) om zo een 'fallback' te maken voor oudere browsers die geen html5 ondersteunen.

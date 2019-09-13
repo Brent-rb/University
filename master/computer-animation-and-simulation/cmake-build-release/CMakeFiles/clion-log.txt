@@ -1,0 +1,4 @@
+/opt/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/brent/Documents/CAS
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/brent/Documents/CAS/cmake-build-release

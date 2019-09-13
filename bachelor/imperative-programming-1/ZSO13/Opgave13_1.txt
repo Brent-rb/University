@@ -1,0 +1,5 @@
+1) Sinds de lokale tabel die aangemaakt is aan de hand van de tabel a gekoppeld is aan a in het geheugen wordt elke verandering aan z doorgevoerd naar a dus er wordt 29 uitgeprint
+
+2) 0 want aangeziend tabel b nog niet geinitialiseerd is wordt z aan een andere tabel in het geheugen gelinked
+
+3) 29 want c wordt gekoppeld aan tabel z in f3

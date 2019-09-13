@@ -1,0 +1,28 @@
+1)
+De php file staat op de filesystem van de server, de server heeft dus geen enkel probleem bij het detecteren van het file-type, de client kan aan de path van de file zijn dat het eindigt op .php.
+
+2)
+Wanneer de string een nummer bevat wordt dit nummer omgezet naar een getal en dan wordt deze vergeleken met het 2de getal. Begint de string met een nummer en eindigt deze met een tekst dan wordt de string tot een nummer omgevormd tot het tekstgedeelte.
+
+Wanneer er een . in de string staat wordt het een float.
+
+Wanneer het niet begint met een cijfer wordt deze nul.
+
+3)
+Types mogen verschillend zijn maar als keys verschillend typen zijn worden ze naar het zelfde type gecast.
+
+4)
+Cookies zijn text-strings die van de server naar de browser worden verzonden en de browser slaagt deze dan op, zo kan de server de cookies bij een volgend bezoek terug gebruiken. Zo kunnen opties en dergelijke opgeslagen worden zodat elke pagina deze opties kunnen inladen.
+
+In PHP kan je setcookie(name, value, expire, path, domain); gebruiken om een cookie te maken (moet voor de html tag gebeuren).
+
+Cookies zijn beschikbaar via de $_COOKIE array waarvan de index de naam van de cookie is.
+
+5)
+Bij synchroon wacht het script op de server na een request te sturen en staat het programma dus op pauze tot hij een antwoord krijgt van de server.
+
+Bij asynchroon werkt het script met events. Na een request te sturen doet het programma gewoon verder. Wanneer het programma een reply krijgt voert hij het event uit dat bij de request hoorde en verwekt hij de verkregen data.
+
+Synchrone AJAX gebruikt men enkel wanneer de data die men afhaalt nodigzakelijk is voordat men kan verder gaan.
+
+In de rest van de gevallen gebruikt mijn best asynchrone AJAX.

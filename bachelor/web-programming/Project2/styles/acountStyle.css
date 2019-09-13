@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*Profile*/
+#profile {
+	min-width: 13rem;
+	margin-top: 10px;
+	border: 2px solid #c3c3c3;
+	background-color: #e5e5e5;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(65% - 4px);
+}
+
+#profile img {
+	clear: both;
+	margin-right: 1rem;
+	height: 12rem;
+	width: auto;
+	float: left;
+}
+
+#profile td {
+	line-height: 2rem;
+	font-size: 1.4rem;
+}
+
+#profile ul {
+	width: 100%;
+}
+
+#profile ul li {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	text-align: center;
+	width: 100%;
+}
+
+#profile > h4 {
+	background-color: #858585;
+	line-height: 2.2rem;
+	font-size: 2rem;
+	width: 100%;
+}
+
+.green {
+	background-color: green;
+}
+
+.green:hover {
+	background-color: white;
+	color: black;
+}
+.red  {
+	background-color: red;
+}
+
+.red:hover {
+	background-color: white;
+	color: black;
+}
+
+.red a {
+	color: black;
+}
+
+.green a {
+	color: black;
+}
+
+#profile ul li:hover {
+	background-color: white;
+}
+
+#selected {
+	background-color: white;
+}
+/*End Profile*/

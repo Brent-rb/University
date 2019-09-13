@@ -1,0 +1,249 @@
+(define evalbool
+	(lambda (l)
+		(cond
+			((null? l) #t)
+			((atom? l) (cond
+				((eq? l 'true) #t)
+				(else #f)
+			))
+			(else 
+				(cond
+					((eq? (car l) 'and) (and (evalbool (car (cdr l))) (evalbool (car (cdr (cdr l))))))
+					((eq? (car l) 'or)  (or  (evalbool (car (cdr l))) (evalbool (car (cdr (cdr l))))))
+					((eq? (car l) 'not) (not (evalbool (car (cdr l)))))
+				)
+			)
+		)
+	)
+)
+
+(define carprod
+	(lambda (l1 l2)
+		(cond
+			((null? l1) '())
+			(else (cons (carprodsub (car l1) l2)(carprod (cdr l1) l2)))
+		)
+	)
+)
+
+(define carprodsub
+	(lambda (l1 l2)
+		(cond 
+			((null? l2) '())
+			(else (cons (lunie l1 (car l2)) (carprodsub l1 (cdr l2))))
+		)
+	)
+)
+
+
+(define prefixNotation
+	(lambda (l)
+		(cond
+			((atom? l) l)
+			(else (cons (car (cdr l)) (cons (prefixNotation (car l)) (cons (prefixNotation (car (cdr (cdr l)))) '()))))
+		)
+	)
+)
+
+(multiinsertLR&co ’salty ’fish ’chips ’(chips and fish) col0)
+
+
+
+(multiinsertLR&co 'salty 'fish 'chips '(and fish) col1)
+
+
+col1 = (lambda (newlat L R)
+	(col0 (cons 'salty (cons 'chips newlat)) L (add1 R))
+)
+
+
+(multiinsertLR&co 'salty 'fish 'chips '(fish) col2)
+
+
+col2 = (lambda (newlat L R)
+	(col1 (cons 'and newlat) L R)
+)
+
+(multiinsertLR&co 'salty 'fish 'chips '() col3)
+
+col3 = (lambda (newlat L R)
+	(col2 (cons 'salty (cons 'fish newlat)) (add1 L) R)
+)
+
+(col3 '() 0 0)
+
+(col2 (cons 'salty (cons 'fish '())) (add1 0) 0)
+(col1 (cons 'and '(salty fish)) 1 0)
+(col0 (cons 'salty (cons 'chips '(and salty fish))) 1 (add1 0))
+(cons 1 (cons 1 '(salty chips and salty fish)))
+'(1 1 salty chips and salty fish)
+
+
+(define multiinsertLR&co
+	(lambda (new oldL oldR lat col)
+		(cond
+			((null? lat) (col (quote ()) 0 0))
+
+			((eq? (car lat) oldL) 
+				(multiinsertLR&co new oldL oldR (cdr lat) 
+					(lambda (newlat L R)
+						(col (cons new (cons oldL newlat)) (add1 L) R)
+					)
+				)
+			)
+
+			((eq? (car lat) oldR)
+				(multiinsertLR&co new oldL oldR (cdr lat)
+					(lambda (newlat L R)
+						(col (cons oldR (cons new newlat)) L (add1 R))
+					)
+				)
+			)
+
+			(else 
+				(multiinsertLR&co new oldL oldR (cdr lat)
+					(lambda (newlat L R)
+						(col (cons (car lat) newlat) L R)
+					)
+				)
+			)
+
+		)
+	)
+)
+
+(define col0
+	(lambda (x y z)
+		(cons y (cons z x))
+	)
+)
+
+
+(define positions 
+	(lambda (pattern lat)
+		(positionsHelp pattern lat positionCol)
+	)
+)
+
+(define positionsHelp
+	(lambda (pattern lat col)
+		(cond 
+			((null? lat) (col 0 '()))
+			((eq? (car lat) pattern) 
+				(positionsHelp pattern (cdr lat) 
+					(lambda (number lon)
+						(col (add1 number) (cons (add1 number) lon))
+					)
+				)
+			)
+			(else (positionsHelp pattern (cdr lat)
+				(lambda (number lon)
+					(col (add1 number) lon)
+				)
+			))
+		)
+	)
+)
+
+(define count-no-partners
+	(lambda (p)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (count-no-partners (car p)) (count-no-partners (cdr p))))
+			((atom? (car p)) (add1 (count-no-partners (cdr p))))
+		)
+	)
+)
+
+(define positionCol
+	(lambda (number lon)
+		lon
+	)
+)
+
+(define count-persons 
+	(lambda (p)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (count-persons (car p)) (count-persons (cdr p))))
+			((atom? (car p)) 
+				(cond 
+					((eq? (partner p) 'unknown) (add1 (count-persons(next-person p))))
+					(else (add1 (add1 (count-persons(next-person p)))))
+				)
+			)
+		)
+	)
+)
+
+(define partner
+	(lambda (p)
+		(car (cdr (cdr (cdr p))))
+	)
+)
+
+(define next-person 
+	(lambda (p)
+		(cdr (cdr (cdr (cdr p))))
+	)
+)
+
+(define age
+	(lambda (p)
+		(car (cdr p))
+	)
+)
+(define average-age-inner
+	(lambda (p year)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (average-age-inner (car p) year) (average-age-inner (cdr p) year)))
+			(else (plus (minus year (age p)) (average-age-inner (next-person p) year)))
+		)
+	)
+)
+
+
+(define count-no-partners
+	(lambda (p)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (count-no-partners (car p)) (count-no-partners (cdr p))))
+			((atom? (car p)) (add1 (count-no-partners (next-person p))))
+		)
+	)
+)
+
+(define average-age
+  	(lambda (p year)
+    	(/ (average-age-inner p year) (count-no-partners p))
+  	)
+)
+
+(define eye-color 
+  	(lambda (p)
+    	(car (cdr (cdr p)))
+    )
+)
+
+(define eye-colors 
+  	(lambda (p)
+    	(cond
+      		((null? p) '())
+      		((list? (car p)) (prependl (eye-colors (car p)) (eye-colors (cdr p))))
+      		(else (cons (eye-color p) (eye-colors (next-person p))))
+      	)
+    )
+)
+  
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+8.1.1)
+
+a)
+CREATE VIEW StudioPres AS 
+SELECT name, address, cert
+FROM MovieExec
+WHERE cert IN (
+	SELECT pres
+	FROM Studio
+);
+
+CREATE VIEW StudioPres AS
+	SELECT MovieExec.name, movieExec.address, cert
+	FROM MovieExec, Studio
+	WHERE cert = pres;
+
+b)
+CREATE VIEW ExecutiveStar AS
+SELECT name, address, gender, birthdate, cert, networth
+FROM MovieStar NATURAL JOIN MovieExec;
+
+c)
+CREATE VIEW RichExec AS
+SELECT * 
+FROM MovieExec
+WHERE netWorth >= 5000000;
+
+
+8.1.2)
+
+a)
+SELECT name
+FROM StudioPres
+WHERE cert IN (
+	SELECT cert
+	FROM RichExec
+);
+
+SELECT StudioPres.name
+FROM StudioPres, RichExec
+WHERE StudioPres.cert = RichExec.cert;
+
+b)
+SELECT name
+FROM ExecutiveStar
+WHERE gender = 'F';
+
+c)
+SELECT name 
+FROM ExecutiveStar NATURAL JOIN RichExec NATURAL JOIN StudioPres
+WHERE netWorth >= 10000000;
+
+
+8.2.1)
+1) Nope -> 2 Relaties
+2) Nee -> Join in FROM
+3) Jawel
+
+
+8.5.3)
+
+8.3.1)
+a)
+CREATE INDEX index_movies_length
+ON Movies(length);
+
+b)
+CREATE INDEX index_studio_address
+ON Studio(address);
+
+c)
+CREATE INDEX index_studio_year_genre
+ON Movies(year, genre);
+
+14.6)
+CREATE MATERIALISED VIEW ShipsInBattle AS
+	SELECT O.battle AS battle, Country as Country, S.name as name
+	FROM Outcomes O, Ships S, Classes C
+	WHERE O.ship = S.name AND S.class = C.class
+
+FROM ShipsInBattle S1, S2, S3
+WHERE	S1.country = S2.country AND S2.country = S3.country
+	AND S1.battle = S2.battle AND S2.battle = S3.battle 
+	AND S1.name < S2.name AND S2.name < S3.name;
+
+
+
+Pages: 100
+
+StarsIn(movieTitle, movieYear, starName);
+
+Q1: 
+SELECT movieTitle, movieYear
+FROM StarsIn 
+WHERE starName = s;
+
+s constante;
+
+Q2:
+SELECT starName
+FROM StarsIn
+WHERE movieTitle = t AND movieYear = y;
+
+I: We insert a new tuple into StarsIn. That is, we execute an insertion of the form:
+
+INSERT INTO StarsIn VALUES(t, y, s);
+
+2: On the average, a star has appeared in 3 movies and a movie has 3 stars.
+3: Index op starName of (movieTile, movieYear) -> 3 Disk acces for tupple, otherwise 10.
+4:1 disk acces is needed to read a page of the index every time we use that index to locate tuples with a given value for the indexed attributes.
+If an index page must be modified (in the case of an insertion), then another disk acces is needed to write back the modifiek page.
+5: Likewise, in the case of an insertion, one disk acces is needed to read a page on which the nwe tuple will be placed, and another disk acces is needed to write back this page. We assume that, even without an index, we can find some page on which an additional tuple will fit, without scanning the entire relation.
+
+
+Q1:100
+Q2:100
+I:2
+
+Average no index: 98p1 + 98p2 + 2
+
+4p1 + 100p2 + (4 * (1 - (p1 + p2)))
+
+96p2 + 4
+96p1 + 4
+
+4p1 + 4p2 + (6 * (1 - (p1 + p2)))
+
+6 - 2p1 - 2p2

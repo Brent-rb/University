@@ -1,0 +1,568 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname test) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f ())))
+(define firstOfThree
+	(lambda (l1 l2 l3)
+		(cond
+			((null? l1) #f)
+			((null? l2) #f)
+			((null? l3) #f)
+                 )
+                 (cons (car l1) (cons (car l2) (cons (car l3) '())))
+		
+	)
+)
+
+(define prependl
+	(lambda (l1 l2)
+		(cond 
+			((null? l1) l2)
+			(else (cons (car l1) (prependl (cdr l1) l2)))
+		)
+	)
+)
+
+(define revl
+	(lambda (l1)
+		(cond
+			((null? l1) '())
+			(else (prependl (revl (cdr l1)) (cons (car l1) '())))
+		)
+	)
+)
+(define palindroom
+	(lambda (l1)
+		(prependl l1 (revl l1))
+	)
+)
+
+(define palindroom2
+	(lambda (l1)
+		(prependl l1 (cdr (revl l1)))
+	)
+)
+
+
+(define atom?
+  (lambda (x)
+    (and (not (pair? x)) (not (null? x))
+    )
+  )
+)
+
+(define lat?
+  (lambda (l)
+    (cond
+	((null? l) #t)
+	((atom? (car l)) (lat? (cdr l)))
+	(else #f)
+    )
+  )
+)
+
+
+(define lunie
+	(lambda (l1 l2)
+		(cond
+			((null? l1) l2)
+			((member (car l1) l2) (lunie (cdr l1) l2))
+			(else (lunie (cdr l1) (cons (car l1) l2)))
+		)
+	)
+)
+
+(define linter
+	(lambda (l1 l2)
+		(cond
+			((null? l1) '())
+			((member (car l1) l2) (linter (cdr l1) l2))
+			(else (cons (car l1) (linter (cdr l1) l2)))
+		)
+	)
+)
+
+(define ldoor
+	(lambda (l1 l2)
+		(cond
+			((null? l1) '())
+			((member (car l1) l2) (cons (car l1) (ldoor (cdr l1) l2)))
+			(else (ldoor (cdr l1) l2))
+		)
+	)
+)
+
+(define duplicate
+	(lambda (l1)
+		(cond
+			((null? l1) '())
+			(else (cons (car l1) (cons (car l1) (duplicate (cdr l1)))))
+		)
+	)
+)
+
+(define suffixes
+	(lambda (l1)
+		(cond
+			((null? l1) '(()))
+			(else (cons l1 (suffixes (cdr l1))))
+		)
+	)
+)
+
+(define plus 
+  (lambda (n m)
+    (cond
+      ((zero? m) n)
+      (else (add1 (plus n(sub1 m)))))
+    )
+)
+
+(define minus
+	(lambda (n m)
+		(cond 
+			((zero? m) n)
+			(else (sub1 (minus n (sub1 m))))
+		)
+	)
+)
+
+(define sub1
+  (lambda (n)
+    (- n 1)))
+
+(define div
+	(lambda (n m)
+		(cond
+			((< n m) 0)
+			(else (add1 (div (minus n m) m)))
+		)
+	)
+)
+
+(define f-to-c
+	(lambda (f)
+		(minus (div (times (plus f 40) 5) 9) 40)
+
+	)
+)
+
+(define div3?
+	(lambda (n)
+		(cond
+			((eq? (times (div n 3) 3) n) #t)
+			(else #f)
+		)
+	)
+)
+
+(define machten 
+	(lambda (m n)
+		(cond
+			((eq? n 0) '(1))
+			(else (cons (* m (car (machten m (sub1 n)))) (machten m (sub1 n))))
+		)
+	)
+)
+
+
+
+(define mystery2
+	(lambda (x)
+		(cond 
+				((atom? x) 0)
+				((null? x) 1)
+				(else (max
+					(+ (mystery2 (car x)) 1)
+					(mystery2 (cdr x))
+				)
+			)
+		)
+	)
+)
+
+(define fiblist
+	(lambda (k)
+          (cond
+		((eq? k 0) '(1))
+		((eq? k 1) '(1 1))
+		(else (cons (plus (car (fiblist (sub1 k))) (car (fiblist (minus k 2)))) (fiblist (sub1 k))))
+           )
+	)
+)
+
+(define c-to-f
+	(lambda (c)
+		(minus (div (times (plus c 40) 9) 5) 40)
+	)
+)
+
+(define sqrtNew
+	(lambda (n tolerance)
+		(newton n tolerance n)
+	)
+)
+
+(define newton
+	(lambda (n tolerance x)
+		(let ((guess (div n 2)))
+                  (cond 
+                    ((<= (abs (minus x (times guess guess))) tolerance) guess)
+                    (else (newton (plus guess (div x guess)) tolerance x))
+                    )
+                )
+	)
+)
+
+(define mergeSort
+	(lambda (lon)
+		(let ((left (car (split lon))))
+			(let ((right (car (cdr (split lon)))))
+				(cond 
+					((eq? (length left) 0) right)
+					((eq? (length right) 0) left)
+					(else (merge (mergeSort left) (mergeSort right)))
+				)
+			)
+		)
+	)
+)
+
+
+(define merge
+	(lambda (left right)
+		(cond
+			((null? left) right)
+			((null? right) left)
+			(else (cond
+					((> (car left) (car right)) (cons (car left) (merge (cdr left) right)))
+					(else (cons (car right) (merge left (cdr right))))
+				)
+			)
+		)
+	)
+)
+
+(define average
+	(lambda (lon)
+		(/ (plusList lon) (length lon))
+	)
+)
+
+(define insertLR*
+	(lambda (left patern right l)
+		(cond
+			((null? l) '())
+			((atom? (car l))
+				(cond
+					((eq? (car l) patern) (cons left (cons patern (cons right (insertLR* left patern right (cdr l))))))
+					(else (cons (car l) (insertLR* left patern right (cdr l))))
+				)
+			)
+			(else (cons (insertLR* left patern right (car l)) (insertLR* left patern right (cdr l))))
+		)
+	)
+)
+
+(define variance
+	(lambda (lon)
+		(varianceInner (average lon) 1 lon)
+	)
+)
+
+(define varianceInner
+	(lambda (average cnt lon)
+		(cond
+			((null? lon) 0)
+			((eq? cnt 1) (/ (plus (times (minus average (car lon)) (minus average (car lon))) varianceInner(average (add1 cnt) (cdr lon))) (length lon)))
+			(else (plus (times (minus average (car lon)) (minus average (car lon))) varianceInner(average (add1 cnt) (cdr lon))) (length lon))
+		)
+	)
+)
+
+
+(define countIf*
+	(lambda (pattern l)
+		(cond
+			((null? l) 0)
+			((atom? (car l))
+				(cond
+					((eq? pattern (car l)) (add1 (countIf* pattern (cdr l))))
+					(else (countIf* pattern (cdr l)))
+				)
+			)
+			(else (plus (countIf* pattern (car l)) (countIf* pattern (cdr l))))
+		)
+	)
+)
+
+
+
+(define count*
+	(lambda (l)
+		(cond
+			((null? l) 0)
+			((atom? (car l)) (add1 (count* (cdr l))))
+			(else (plus (count* (car l)) (count* (cdr l))))
+		)
+	)
+)
+
+(define plusList
+	(lambda (lon)
+		(cond
+			((null? lon) 0)
+			(else (plus (car lon) (plusList (cdr lon))))
+		)
+	)
+)
+
+(define plusList
+	(lambda (lon)
+		(cond
+			((null? lon) 0)
+			(else (plus (car lon) (plusList (cdr lon))))
+		)
+	)
+)
+
+(define eliminate 
+	(lambda (limit l)
+		(cond
+			((null? l) '())
+			((<= (car l) limit) (cons (car l) (eliminate limit (cdr l))))
+			(else (eliminate limit (cdr l)))
+		)
+	)
+)
+
+(define split
+	(lambda (ln)
+		(splitInner ln '())
+	)
+)
+
+(define splitInner
+	(lambda (left right)
+		(cond
+			((<= (length left) (length right)) (cons left (cons right '())))
+			(else (splitInner (cdr left) (cons (car left) right)))
+		)
+	)
+)
+
+
+(define convert
+	(lambda (lon)
+		(let ((len (length lon)))
+			(cond
+				((eq? len 0) 0)
+				(else (plus (times (car lon) (expt 10 (sub1 len))) (convert (cdr lon))))
+			)
+		)
+	)
+)
+
+
+
+(define times
+	(lambda (n m)
+		(cond
+			((zero? m) 0)
+			(else (plus n (times n (sub1 m))))
+		)
+	)
+)
+
+(define evalbool
+	(lambda (l)
+		(cond
+			((null? l) #t)
+			((atom? l) (cond
+				((eq? l 'true) #t)
+				(else #f)
+			))
+			(else 
+				(cond
+					((eq? (car l) 'and) (and (evalbool (car (cdr l))) (evalbool (car (cdr (cdr l))))))
+					((eq? (car l) 'or)  (or  (evalbool (car (cdr l))) (evalbool (car (cdr (cdr l))))))
+					((eq? (car l) 'not) (not (evalbool (car (cdr l)))))
+				)
+			)
+		)
+	)
+)
+
+(define carprod
+	(lambda (l1 l2)
+		(cond
+			((null? l1) '())
+			(else (cons (carprodsub (car l1) l2)(carprod (cdr l1) l2)))
+		)
+	)
+)
+
+(define carprodsub
+	(lambda (l1 l2)
+		(cond 
+			((null? l2) '())
+			(else (cons (lunie l1 (car l2)) (carprodsub l1 (cdr l2))))
+		)
+	)
+)
+
+
+
+
+(define prefixNotation
+	(lambda (l)
+		(cond
+			((atom? l) l)
+			(else (cons (car (cdr l)) (cons (prefixNotation (car l)) (cons (prefixNotation (car (cdr (cdr l)))) '()))))
+		)
+	)
+)
+
+
+
+(define multiinsertLR&co
+	(lambda (new oldL oldR lat col)
+		(cond
+			((null? lat) (col (quote ()) 0 0))
+
+			((eq? (car lat) oldL) 
+				(multiinsertLR&co new oldL oldR (cdr lat) 
+					(lambda (newlat L R)
+						(col (cons new (cons oldL newlat)) (add1 L) R)
+					)
+				)
+			)
+
+			((eq? (car lat) oldR)
+				(multiinsertLR&co new oldL oldR (cdr lat)
+					(lambda (newlat L R)
+						(col (cons oldR (cons new newlat)) L (add1 R))
+					)
+				)
+			)
+
+			(else 
+				(multiinsertLR&co new oldL oldR (cdr lat)
+					(lambda (newlat L R)
+						(col (cons (car lat) newlat) L R)
+					)
+				)
+			)
+
+		)
+	)
+)
+
+(define col0
+	(lambda (x y z)
+		(cons y (cons z x))
+	)
+)
+
+(define positions 
+	(lambda (pattern lat)
+		(positionsHelp pattern lat positionCol)
+	)
+)
+(define positionsHelp
+	(lambda (pattern lat col)
+		(cond 
+			((null? lat) (col 0 '()))
+			((eq? (car lat) pattern) 
+				(positionsHelp pattern (cdr lat) 
+					(lambda (number lon)
+                                          (col (add1 number) (cons (add1 number) lon))
+					)
+				)
+			)
+			(else (positionsHelp pattern (cdr lat)
+				(lambda (number lon)
+					(col (add1 number) lon)
+				)
+			))
+		)
+	)
+)
+(define positionCol
+	(lambda (number lon)
+		lon
+	)
+)
+
+
+(define count-persons 
+	(lambda (p)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (count-persons (car p)) (count-persons (cdr p))))
+			((atom? (car p)) 
+				(cond 
+					((eq? (partner p) 'unknown) (add1 (count-persons(next-person p))))
+					(else (add1 (add1 (count-persons(next-person p)))))
+				)
+			)
+		)
+	)
+)
+
+(define partner
+	(lambda (p)
+		(car (cdr (cdr (cdr p))))
+	)
+)
+
+(define next-person 
+	(lambda (p)
+		(cdr (cdr (cdr (cdr p))))
+	)
+)
+
+(define age
+	(lambda (p)
+		(car (cdr p))
+	)
+)
+(define average-age-inner
+	(lambda (p year)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (average-age-inner (car p) year) (average-age-inner (cdr p) year)))
+			(else (plus (minus year (age p)) (average-age-inner (next-person p) year)))
+		)
+	)
+)
+
+
+(define count-no-partners
+	(lambda (p)
+		(cond
+			((null? p) 0)
+			((list? (car p)) (plus (count-no-partners (car p)) (count-no-partners (cdr p))))
+			((atom? (car p)) (add1 (count-no-partners (next-person p))))
+		)
+	)
+)
+
+(define average-age
+  (lambda (p year)
+    (/ (average-age-inner p year) (count-no-partners p))
+  )
+)
+
+(define eye-color 
+  (lambda (p)
+    (car (cdr (cdr p)))))
+
+(define eye-colors 
+  (lambda (p)
+    (cond
+      ((null? p) '())
+      ((list? (car p)) (prependl (eye-colors (car p)) (eye-colors (cdr p))))
+      (else (cons (eye-color p) (eye-colors (next-person p)))))))
+    
+
+(eye-colors '(Dave 1920 brown Kelly ((Anna 1955 blue James ((Bob 1980 blue unknown ())(Lara 1982 green unknown ())))(Carl 1957 brown Elisabeth ()))))

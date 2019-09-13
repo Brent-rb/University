@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CAS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/brent/Documents/CAS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/brent/Documents/CAS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/brent/Documents/CAS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CAS">
+				<Option output="/home/brent/Documents/CAS/cmake-build-debug/CAS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/brent/Documents/CAS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 CAS"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CAS/fast">
+				<Option output="/home/brent/Documents/CAS/cmake-build-debug/CAS" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/brent/Documents/CAS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 CAS/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/brent/Documents/CAS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/brent/Documents/CAS/Cameras/Camera.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Cameras/Camera.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Cameras/DirectedCamera.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Cameras/DirectedCamera.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Cameras/FirstPersonCamera.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Cameras/FirstPersonCamera.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Clickable.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Clickable.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/FFD.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/FFD.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/FFDClickable.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/FFDClickable.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Fluids/FluidCell.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Fluids/FluidCell.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Fluids/FluidGrid.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Fluids/FluidGrid.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Fluids/FluidPoint.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Fluids/FluidPoint.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/GameObject.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/GameObject.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Help.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Help.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/InputBuffer/InputBuffer.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/InputBuffer/InputBuffer.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/InputBuffer/Key.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/InputBuffer/Key.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/InputBuffer/Mouse.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/InputBuffer/Mouse.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/ObjectPool.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/OpenGLRenderer.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/OpenGLRenderer.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Particle.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Particle.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/ParticleEmitter.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/ParticleEmitter.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/EaseInEaseOut.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/EaseInEaseOut.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/InterpolatedPath.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/InterpolatedPath.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/LinearController.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/LinearController.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/Path.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/Path.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/PathController.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/PathController.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/RotationPath.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/RotationPath.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/Spline.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/Spline.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/TimePoint.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Path/TimePoint.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Cube.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Cube.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Line.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Line.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Model.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Model.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Renderable.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Renderable.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Square.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Square.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Transformable.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Transformable.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Triangle.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/Triangle.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/VertexPrimitive.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Renderables/VertexPrimitive.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/SWindow.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/SWindow.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Shaders/ShaderBase.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Shaders/ShaderBase.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Shaders/ShaderProgram.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Shaders/ShaderProgram.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/SkyBox.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/SkyBox.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/ImageLoader.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/ImageLoader.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/SolidColorTexture.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/SolidColorTexture.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/Texture.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/Texture.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/Texture1D.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/Texture1D.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/Texture2D.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/Texture2D.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/Textures/stb_image.h">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/main.cpp">
+			<Option target="CAS"/>
+		</Unit>
+		<Unit filename="/home/brent/Documents/CAS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

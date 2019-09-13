@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $# -eq 1 ]
+	then
+	dir=$1
+else
+	dir=`pwd`
+fi
+
+for file in `ls $dir`
+do
+	echo $file
+done
