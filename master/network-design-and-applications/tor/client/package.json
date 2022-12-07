@@ -9,8 +9,8 @@
   "author": "Brent Berghmans, Bert Proesmans",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "multer": "^1.3.0",
     "node-rsa": "^0.4.2",
     "superagent": "^3.8.0"
