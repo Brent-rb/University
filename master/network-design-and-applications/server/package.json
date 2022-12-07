@@ -9,7 +9,7 @@
   "author": "Brent Berghmans, Bert Proesmans",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "express-session": "^1.15.6",
     "store": "^2.0.12",
     "uuid": "^3.1.0",
